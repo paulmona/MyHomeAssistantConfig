@@ -39,9 +39,20 @@ implemented a HomeSeer plugin called mcsMQTT so that I can use Homeseer for what
     * 2 Nest Thermostats 
     * 3 Nest CO2/Smoke Detectors
  
- * Ring - 
+ * Ring
     * 1 Ring Pro Doorbell 
     * 1 Ring Floodlight Camera
- 
+
+ * Sonos   
+    * 2 Play:1
+    * 1 Play:5
+
+ * Google Home
+    * 1 Google Home (original) with Rechargable battery base
+    * 4 Google Home Mini   
+
+ * Blind Control
+    * MK Smart House ESP8266 Based Blind tilt - https://www.mksmarthouse.com/shop/Blinds-Control-p93393095
+
  * I'm sure I'm missing some other things.
 
