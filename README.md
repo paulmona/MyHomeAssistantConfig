@@ -14,13 +14,15 @@ I've long held that voice is the key to "seemless" home automation - what's the 
 
 # *My Current Home Automation Components*
 
+# *The Brains*
+
  *  HomeSeer - For Purely Z-Wave with mcsMQTT Plugin
  *  Home Assistant - For modern code base, integration with 3rd party devices and services, modern front end (Lovelace) etc.
  *  Node-Red - For automation
  *  Mosquitto MQTT - For automation
  *  MariaDB - For HA Recorder History
 
- * Hardware Platform
+# *Hardware Platform*
 
     * Homeseer Hometroller Zee S2
     * Hass.io on Raspberry Pi 3B (Home Assistant and Node-Red)
