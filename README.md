@@ -20,7 +20,7 @@ I've long held that voice is the key to "seemless" home automation - what's the 
  *  Mosquitto MQTT - For automation
  *  MariaDB - For HA Recorder History
 
- * Platform
+ * Hardware Platform
 
     * Homeseer Hometroller Zee S2
     * Hass.io on Raspberry Pi 3B (Home Assistant and Node-Red)
