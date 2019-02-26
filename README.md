@@ -59,7 +59,7 @@ I've long held that voice is the key to "seemless" home automation - what's the 
 
  * Presence Detection
    * 4 * Raspberry Pi W running Monitor https://github.com/andrewjfreyer/monitor/ for Bluetooth and BTLE presence detection
-   * Node-Red Unifi Plugin for WiFi detection
+   * Node-Red Unifi integration for WiFi detection
  
  * Harmony Remote (Home Assistant)  
 
