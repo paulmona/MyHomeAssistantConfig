@@ -255,8 +255,8 @@
          arg: eth0  
   
   - platform: travisci
-  api_key: !secret github_token
-  repository:
-    - MyHomeAssistantConfig
-  monitored_conditions:
-    - last_build_state
+    api_key: !secret github_token
+    repository:
+      - MyHomeAssistantConfig
+    monitored_conditions:
+      - last_build_state
