@@ -4,8 +4,8 @@ python:
 before_install:
   - mv travis_secrets.yaml secrets.yaml
   - mkdir ssl/
-  - mv travis-fullchain.pem.txt ssl/
-  - mv travis-privatekey.pem.txt ssl/
+  - mv travis-fullchain.pem.txt ssl/fullchain.pem
+  - mv travis-privatekey.pem.txt ssl/privatekey.pem
 install:
   - pip3 install homeassistant
 script:
