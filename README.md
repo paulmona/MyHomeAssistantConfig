@@ -25,9 +25,23 @@ implemented a HomeSeer plugin called mcsMQTT so that I can use Homeseer for what
 
 # *Hardware*
 
- *  Z-Wave - 20+ Homeseer WD-100 & Evolve dimmers, 5+ Aeon Labs and Dome smart switches, 1 Aeon Labs heavy duty smart switch (pool pump),  3 * Aeotec multi sensor 5, 
-1 Fortezza Mimo Lite (garage door), 1 Ecolink Motorized Z-wave switch (for switches that don't have neutral wire), 2 Schlage Connect dead bolts, various other sensors.
- * Nest - 2 Thermostats, 3 Nest CO2/Smoke Detectors
- * Ring - 1 Ring Pro Doorbell, 1 Ring Floodlight Camera
+ *  Z-Wave 
+    * 20+ Homeseer WD-100 & Evolve dimmers 
+    * 5+ Aeon Labs and Dome smart switches
+    * 1 Aeon Labs heavy duty smart switch (pool pump)
+    * 3 Aeotec multi sensor 5 
+    * 1 Fortezza Mimo Lite (garage door) 
+    * 1 Ecolink Motorized Z-wave switch (for switches that don't have neutral wire)
+    * 2 Schlage Connect dead bolts
+    * various other sensors I'm forgetting about.
+ 
+*  Nest 
+    * 2 Nest Thermostats 
+    * 3 Nest CO2/Smoke Detectors
+ 
+ * Ring - 
+    * 1 Ring Pro Doorbell 
+    * 1 Ring Floodlight Camera
+ 
  * I'm sure I'm missing some other things.
 
