@@ -1,0 +1,16 @@
+  - platform: ring
+
+  - platform: mqtt
+    name: "PS4 Power Status"
+    unique_id: "PS4PowerStatus"
+    state_topic: "nodered/ps4/power"
+    value_template: "{%if is_state(entity_id,\"on\")-%}OFF{%-else-%}ON{%-endif%}" 
+
+  - platform: mqtt
+    name: "Front Hall MultiSensor Motion"
+    unique_id: "Front Hall MultiSensor Motion"
+    state_topic: "homeseer/Front_Hall/MultiSensor/Motion"
+    device_class: motion
+    payload_on: 1
+    payload_off: 0
+    

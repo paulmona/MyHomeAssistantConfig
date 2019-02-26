@@ -1,0 +1,175 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret mylatitude 
+  longitude: !secret mylongtitude
+  # Impacts weather/sunrise data (altitude above sea level in meters not feet)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Toronto
+ 
+  # Customization file
+#customize: !include customize.yaml
+  
+  # Enables the frontend
+frontend: 
+     themes: !include amoled.yaml
+ 
+  # Saves data to MariaDB
+recorder: !include recorder.yaml
+
+# Sensor Include File
+sensor: !include sensors.yaml
+
+# Lights Include File
+light: !include lights.yaml
+
+# Switch Include File
+switch: !include switches.yaml
+
+# Locks Include File
+lock: !include locks.yaml
+
+# Binary Sensor Include
+binary_sensor: !include binary_sensor.yaml
+        
+# Cloud Include for Google Assistant
+cloud: !include cloud.yaml
+
+# Groups of Devices
+group: !include groups.yaml
+
+# HA Automations - Not used I use node-red
+automation: !include automations.yaml
+
+# Scripts - Also not used (yet)
+script: !include scripts.yaml
+
+system_health:
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables configuration UI
+config:
+  
+zone 1:
+  name: Home
+  latitude: !secret mylatitude
+  longitude: !secret mylongtitude 
+  icon: mdi:home
+  radius: 500
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+# updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+zwave:
+  usb_path: /dev/ttyACM0
+  network_key: !secret zwave_key
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+# conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# SSL configuration
+http:
+  base_url: !secret my_url
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+# Weather
+weather:
+  - platform: yweather
+
+mqtt:
+    port: 1883
+    broker: 192.168.0.68 
+    username: hass
+    password: !secret mqtt_password
+    discovery: true
+    client_id: hassio
+    discovery_prefix: homeseer
+
+# Nest Configuration
+nest:
+  client_id: !secret nest_id
+  client_secret: !secret nest_secret
+
+  # Example configuration.yaml entry
+input_boolean:
+   paul_occupancy:
+     name: paul_home
+     initial: off
+     icon: mdi:car
+   
+   kristina_occupancy:
+     name: kristina_home
+     initial: off
+     icon: mdi:car
+
+   house_away:
+      name: house_occupancy
+      initial: off
+      icon: mdi:car
+
+device_tracker:
+  - platform: mqtt
+    devices:
+       paul_pixel: "presence/Paul"
+       kristina_iphone: "presence/Kristina"
+       sasha_iphone: "presence/Sasha"
+       tristan_iphone: "presence/Tristan"
+    
+cover:
+  - platform: mqtt
+    name: "Garage Door"
+    command_topic: "homeseer/Garage/Garage_Door/Control"
+    state_topic: "homeseer/Garage/Door/Status"
+    payload_open: "0"
+    payload_close: "0"
+    payload_stop: "0"
+    state_open: "0"
+    state_closed: "255"
+    optimistic: false
+    #value_template: '{{ value.x }}'
+
+# Text to speech
+tts:
+  - platform: google
+
+google:
+   client_id: !secret google_client_id
+   client_secret: !secret google_secret
+   
+ring:
+  username: !secret ring_username
+  password: !secret ring_password 
+
+# Example configuration.yaml entry
+media_player:
+  - platform: spotify
+    client_id: !secret spotify_clientid
+    client_secret: !secret spotify_secret

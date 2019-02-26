@@ -1,0 +1,10 @@
+device_tracker.paul_pixel:
+  friendly_name: Paul
+device_tracker.kristina_iphone:
+  friendly_name: Kristina
+device_tracker.tristan_iphone:
+  friendly_name: Tristan
+device_tracker.sasha_iphone:
+  friendly_name: Sasha
+device_tracker.shannon_android:
+  friendly_name: Shannon

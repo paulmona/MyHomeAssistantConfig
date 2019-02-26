@@ -1,0 +1,258 @@
+# Homeseer device 229 Family Room Hall Light
+
+#  - platform: mqtt
+#    name: "Family Room Hall Light"
+#    payload_on: "99"
+#    payload_off: "0"
+#    unique_id: "FamulyRoomHallLight"
+#    brightness_scale: "99"
+#    on_command_type: brightness
+#    brightness_state_topic: "homeseer/Family_Room/Light/Family_Room_Hallway"
+#    brightness_command_topic: "homeseer/Family_Room/Light/Family_Room_Hallway/Control"
+#    state_topic: "homeseer/Family_Room/Light/Family_Room_Hallway"
+#    command_topic: "homeseer/Family_Room/Light/Family_Room_Hallway/Control"
+#    optimistic: false
+
+# Homeseer device 232 Family Room Hall Light
+
+  - platform: mqtt
+    name: "Family Room Stairs Light"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "FamulyRoomStairsLight"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: "homeseer/Basement/PS4Smart_Switch"
+    brightness_command_topic: "homeseer/Basement/PS4Smart_Switch/Control"
+    state_topic: "homeseer/Basement/PS4Smart_Switch"
+    command_topic: "homeseer/Basement/PS4Smart_Switch/Control"
+    optimistic: false
+
+# Homeseer device 14 Living Room Lights
+
+  - platform: mqtt
+    name: "Living Room Lights"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "LivingRoomMainLights"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: homeseer/Living_Room/Dimmer/Living_Room_Light
+    brightness_command_topic: homeseer/Living_Room/Dimmer/Living_Room_Light/Control
+    state_topic: homeseer/Living_Room/Dimmer/Living_Room_Light
+    command_topic: homeseer/Living_Room/Dimmer/Living_Room_Light/Control
+    optimistic: false
+
+# Homeseer Device 9 Master Bathroom Dimmer
+
+  - platform: mqtt
+    name: "Master Bathroom Overhead Lights"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "MasterBathroomOverheadLights"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: homeseer/Master_Bathroom/Dimmer/Master_Bathroom_Light
+    brightness_command_topic: homeseer/Master_Bathroom/Dimmer/Master_Bathroom_Light/Control
+    state_topic: homeseer/Master_Bathroom/Dimmer/Master_Bathroom_Light
+    command_topic: homeseer/Master_Bathroom/Dimmer/Master_Bathroom_Light/Control
+    optimistic: false
+
+# Homeseer Device 223 Shed Exterior
+
+  - platform: mqtt
+    name: "Shed Exterior Lights"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "Shed Exterior Lights"
+    brightness_scale: "99"
+    brightness_state_topic: homeseer/Shed/Dimmer/Exterior_Light
+    brightness_command_topic: homeseer/Shed/Dimmer/Exterior_Light/Control
+    state_topic: homeseer/Shed/Dimmer/Exterior_Light
+    command_topic: homeseer/Shed/Dimmer/Exterior_Light/Control
+    optimistic: false
+
+# Homeseer Device 226 Shed Interior Light
+
+  - platform: mqtt
+    name: "Shed Interior Lights"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "ShedInteriorLights"
+    brightness_scale: "99"
+    brightness_state_topic: homeseer/Shed/Dimmer/Interior_Light
+    brightness_command_topic: homeseer/Shed/Dimmer/Interior_Light/Control
+    state_topic: homeseer/Shed/Dimmer/Interior_Light
+    command_topic: homeseer/Shed/Dimmer/Interior_Light/Control
+    optimistic: false    
+  
+# Homeseer Device 18 Shannon Overhead
+
+  - platform: mqtt
+    name: "Shannon Overhead Lights"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "ShannonOverheadLights"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: homeseer/Shannon_Room/Dimmer/Shannon_Overhead_Light
+    brightness_command_topic: homeseer/Shannon_Room/Dimmer/Shannon_Overhead_Light/Control
+    state_topic: homeseer/Shannon_Room/Dimmer/Shannon_Overhead_Light
+    command_topic: homeseer/Shannon_Room/Dimmer/Shannon_Overhead_Light/Control
+    optimistic: false
+
+# Homeseer Device 17 Maegan Overhead
+
+  - platform: mqtt
+    name: "Maegan Overhead Lights"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "MaeganOverheadLights"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: homeseer/Maegan_Room/Dimmer/Maegan_Overhead_Light
+    brightness_command_topic: homeseer/Maegan_Room/Dimmer/Maegan_Overhead_Light/Control
+    state_topic: homeseer/Maegan_Room/Dimmer/Maegan_Overhead_Light
+    command_topic: homeseer/Maegan_Room/Dimmer/Maegan_Overhead_Light/Control
+    optimistic: false
+
+# Homeseer Device 15 Orson overhead
+
+  - platform: mqtt
+    name: "Orson Overhead Lights"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "OrsonOverheadLights"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: homeseer/Orson_Room/Dimmer/Orson_Overhead_Light
+    brightness_command_topic: homeseer/Orson_Room/Dimmer/Orson_Overhead_Light/Control
+    state_topic: homeseer/Orson_Room/Dimmer/Orson_Overhead_Light
+    command_topic: homeseer/Orson_Room/Dimmer/Orson_Overhead_Light/Control
+    optimistic: false
+
+# Homeseer 138 Deskside Lamp Switch
+
+  - platform: mqtt
+    name: "Tristan Deskside Lamp"
+    payload_on: "On"
+    payload_off: "Off"
+    unique_id: "TristanDesksideLamp"
+    state_topic: homeseer/Tristan_Room/Light/Tristan_Desk_Side_Lamp
+    command_topic: homeseer/Tristan_Room/Light/Tristan_Desk_Side_Lamp/Control
+    optimistic: false
+
+# Homeseer 137 Bedside Lamp
+
+  - platform: mqtt
+    name: "Tristan Bedside Lamp"
+    payload_on: "On"
+    payload_off: "Off"
+    unique_id: "TristanBedsideLamp"
+    state_topic: "homeseer/Tristan_Room/Light/Bedside_Lamp"
+    command_topic: "homeseer/Tristan_Room/Light/Bedside_Lamp/Control"
+    optimistic: false
+
+# Homeseer 13 Dining Room overhead
+
+  - platform: mqtt
+    name: "Dining Room Overhead Light"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "DiningRoomOverheadLights"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: homeseer/Dining_Room/Dimmer/Dining_Room_Light
+    brightness_command_topic: homeseer/Dining_Room/Dimmer/Dining_Room_Light/Control
+    state_topic: homeseer/Dining_Room/Dimmer/Dining_Room_Light
+    command_topic: homeseer/Dining_Room/Dimmer/Dining_Room_Light/Control
+    optimistic: false
+
+# Homeseer 12 Kitchen Overhead
+
+  - platform: mqtt
+    name: "Kitchen Overhead Light-2"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "KitchenSecondaryLight"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: homeseer/Kitchen/Dimmer/Kitchen_Secondary_Light
+    brightness_command_topic: homeseer/Kitchen/Dimmer/Kitchen_Secondary_Light/Control
+    state_topic: homeseer/Kitchen/Dimmer/Kitchen_Secondary_Light
+    command_topic: homeseer/Kitchen/Dimmer/Kitchen_Secondary_Light/Control
+    optimistic: false
+
+# Homeseer 13 kitchen main light
+
+  - platform: mqtt
+    name: "Kitchen Overhead Light-1"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "KitchenOverhead1Light"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: homeseer/Kitchen/Dimmer/Kitchen_Main_Light
+    brightness_command_topic: homeseer/Kitchen/Dimmer/Kitchen_Main_Light/Control
+    state_topic: homeseer/Kitchen/Dimmer/Kitchen_Main_Light
+    command_topic: homeseer/Kitchen/Dimmer/Kitchen_Main_Light/Control
+    optimistic: false
+
+# Homeseer device 16 Kitchen Island Lights
+
+  - platform: mqtt
+    name: "Kitchen Island Lights"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "KitchenIslandLights"
+    state_topic: homeseer/Kitchen/Dimmer/Kitchen_Island_Light
+    command_topic: homeseer/Kitchen/Dimmer/Kitchen_Island_Light/Control
+    optimistic: false
+
+# Homeseer 318 Garage Workbench Light
+
+  - platform: mqtt
+    name: "Garage Workbench Light"
+    payload_on: "On"
+    payload_off: "Off"
+    unique_id: "GarageWorkBenchLight"
+    state_topic: homeseer/Garage/Switch/Workbench_Light
+    command_topic: homeseer/Garage/Switch/Workbench_Light/Control
+    optimistic: false
+
+# Homeseer 311 Sasha overhead light switch
+
+  - platform: mqtt
+    name: "Sasha Overhead Light"
+    payload_on: "255"
+    payload_off: "0"
+    unique_id: "SashaOverheadLight"
+    state_topic: homeseer/Sasha_Room/Switch/Overhead_Light
+    command_topic: homeseer/Sasha_Room/Switch/Overhead_Light/Control
+    optimistic: false
+
+# Homeseer 8 Master Bedroom Overhead Light 
+
+  - platform: mqtt
+    name: "Master Bedroom Overhead Light"
+    payload_on: "99"
+    payload_off: "0"
+    unique_id: "MasterBedroomOverheadLight"
+    brightness_scale: "99"
+    on_command_type: brightness
+    brightness_state_topic: homeseer/Master_Bedroom/Dimmer/Master_Bedroom_Light
+    brightness_command_topic: homeseer/Master_Bedroom/Dimmer/Master_Bedroom_Light/Control
+    state_topic: homeseer/Master_Bedroom/Dimmer/Master_Bedroom_Light
+    command_topic: homeseer/Master_Bedroom/Dimmer/Master_Bedroom_Light/Control
+    optimistic: false
+
+# Group for Mainfloor Lights
+
+  - platform: group
+    name: "Main Floor Lights"
+    entities: 
+      - light.kitchen_island_lights
+      - light.kitchen_overhead_light_1
+      - light.kitchen_overhead_light_2
+      - light.living_room_lights
+      - light.dining_room_overhead_light

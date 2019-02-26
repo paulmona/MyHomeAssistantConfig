@@ -1,0 +1,17 @@
+
+  - platform: mqtt
+    name: "Master Bedroom Thermostat"
+    unique_id: "MasterBedroomThermostat"
+    availability_topic: homeseer/Master_Bedroom/Nest_Thermostat/Master_Bedroom_HVAC_Status
+    current_temperature_topic: homeseer/Master_Bedroom/Nest_Thermostat/Master_Bedroom_Ambient_Temperature
+    mode_command_topic: homeseer/Master_Bedroom/Nest_Thermostat/HVAC_Mode/Control
+    mode_state_topic: homeseer/Master_Bedroom/Nest_Thermostat/HVAC_Mode
+    temperature_command_topic: homeseer/Master_Bedroom/Nest_Thermostat/Master_Bedroom_Target_Temperature_High/Control
+    temperature_state_topic: homeseer/Master_Bedroom/Nest_Thermostat/Master_Bedroom_Target_Temperature_High
+    fan_mode_command_topic: homeseer/Master_Bedroom/Nest_Thermostat/Fan/Control
+    fan_mode_state_topic: homeseer/Master_Bedroom/Nest_Thermostat/Fan
+    away_mode_command_topic: homeseer/Master_Bedroom/Nest_Thermostat/HomeAway/Control
+    away_mode_state_topic: homeseer/Master_Bedroom/Nest_Thermostat/HomeAway
+    payload_available: 1
+    payload_not_available: 0
+    optimistic: false

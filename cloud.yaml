@@ -1,0 +1,29 @@
+
+  google_actions:
+    filter:
+      include_domains:
+        - switch
+        - light
+        - climate
+        - group
+        - cover
+        
+      exclude_domains:
+        - lock
+        - house
+        - remote
+        - media_player
+        - input_boolean
+        - scene
+        - script
+
+      exclude_entities:
+        - all.devices
+        - all.remotes
+        - all.speakers
+        - light.front_hall_1
+        - light.front_hall_2
+        - light.front_yard_1
+        - light.garage_light_2
+        - light.garage_door_light_1
+        

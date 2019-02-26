@@ -1,0 +1,32 @@
+  - platform: mqtt
+    name: "PS4 Switch On/Off"
+    state_topic: "homeseer/Basement/PS4Smart_Switch"
+    command_topic: "homeseer/Basement/PS4Smart_Switch/Control"
+    payload_on: "255"
+    payload_off: "0"
+    state_on: "255"
+    state_off: "0"
+    icon: mdi:power-plug
+    optimistic: false
+
+# Homeseer Device 430 Sasha Phone Charger Smart Switch
+  - platform: mqtt
+    name: "Sasha Phone Smart Switch"
+    state_topic: "homeseer/Family_Room/Sasha_Phone_Smart_Switch"
+    command_topic: "homeseer/Family_Room/Sasha_Phone_Smart_Switch/Control"
+    payload_on: "255"
+    payload_off: "0"
+    state_on: "255"
+    state_off: "0"
+    icon: mdi:power-plug
+    optimistic: false
+
+#  - platform: mqtt
+#    name: "Garage Door"
+#    state_topic: homeseer/Garage/Garage_Door/Garage_Door_Status
+#    command_topic: homeseer/Garage/Garage_Door/Control
+#    payload_on: "On"
+#    payload_off: "Off"
+#    state_on: "Garage Open"
+#    state_off: "Garage Closed"
+#    optimistic: false

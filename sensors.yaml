@@ -1,0 +1,255 @@
+#  - platform: mqtt
+#    name: "BackDoor Battery Level"
+#    unique_id: "BackDoorBatteryLevel"
+#    icon: mdi:battery
+#    device_class: battery
+#    unit_of_measurement: "%"
+#    state_topic: homeseer/Back_Door/Door_Lock/Battery
+
+  - platform: mqtt
+    name: "FrontDoor Battery Level"
+    unique_id: "FrontDoorBatteryLevel"
+    icon: mdi:battery
+    device_class: battery
+    unit_of_measurement: "%"
+    state_topic: homeeer/Front_Door/Door_Lock/Battery  
+
+  - platform: mqtt
+    name: "Front Door Lock Status"  
+    unique_id: "FrontDoorLockStatus"
+    state_topic: homeseer/Front_Door/Door_Lock/Notification_Status
+
+  - platform: mqtt
+    name: "Sasha Phone Smart Switch Watts"
+    unique_id: "SashaPhoneSmartSwitch"
+    icon: mdi:power-plug
+    unit_of_measurement: "W"
+    state_topic: homeseer/Family_Room/Sasha_Phone_Smart_Switch/Watts   
+
+  - platform: mqtt
+    name: "Sasha Phone Smart Switch KWh"
+    unique_id: "SashaPhoneSmartSwitchKWh"
+    icon: mdi:power-plug
+    unit_of_measurement: "KWh"
+    state_topic: homeseer/Family_Room/Sasha_Phone_Smart_Switch/KWh
+
+  - platform: mqtt
+    name: "Front Hall MultiSensor Battery Level"
+    unique_id: "FrontHallMultiSensorBatteryLevel"
+    icon: mdi:battery
+    device_class: battery
+    unit_of_measurement: "%"
+    state_topic: homeseer/Front_Hall/MultiSensor/Battery
+
+  - platform: mqtt
+    name: "Front Hall MultiSensor Temperature"
+    unique_id: "FrontHallMultiSensorTemperature"
+    device_class: temperature
+    unit_of_measurement: "C"
+    state_topic: homeseer/Front_Hall/MultiSensor/Temperature
+
+  - platform: mqtt
+    name: "Front Hall MultiSensor Light Level"
+    unique_id: "FrontHallMultiSensorLightLevel"
+    device_class: illuminance
+    unit_of_measurement: "lx"
+    state_topic: homeseer/Front_Hall/MultiSensor/LightLevel
+
+  - platform: mqtt
+    name: "Front Hall MultiSensor Relative Humidity"
+    unique_id: "FrontHallMultiSensorRelativeHumidity"
+    device_class: humidity
+    unit_of_measurement: "%"
+    state_topic: homeseer/Front_Hall/MultiSensor/Relative_Humidity
+
+  - platform: min_max
+    name: "Mean House Temperature"
+    type: mean
+    round_digits: 0
+    entity_ids:
+      - sensor.mainfloor_thermostat_temperature
+      - sensor.master_bedroom_thermostat_temperature
+      - sensor.front_hall_multisensor_temperature
+
+  - platform: mqtt
+    name: "Sasha Bedroom Light Switch Battery Level"
+    unique_id: "SashaLightSwitchatteryLevel"
+    icon: mdi:battery
+    device_class: battery
+    unit_of_measurement: "%"
+    state_topic: homeseer/Sasha_Room/Switch/Overhead_Light/Battery
+
+  - platform: mqtt
+    name: "PS4 Smart Switch Watts"
+    unique_id: "BasementSmartSwitchWatts"
+    icon: mdi:power-plug
+    state_topic: "homeseer/Basement/PS4Smart_Switch/Watts"
+    unit_of_measurement: "W"
+
+  - platform: mqtt
+    name: "Kristina Phone Charger Watts"
+    unique_id: "KristinaPhoneChargerWatts"
+    icon: mdi:power-plug
+    state_topic: "homeseer/Garage/Switch/Workbench_Light/Watts"
+    unit_of_measurement: "W"
+
+#  - platform: mopar
+#    username: paulm@spider.org
+#    password: !secret mopar_password  
+#    pin: !secret mopar_pin
+
+  - platform: mqtt
+    state_topic: 'monitor/FamilyRoom/b4:f1:da:97:12:ea'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Paul FamilyRoom'
+
+  - platform: mqtt
+    state_topic: 'monitor/MainFloor/b4:f1:da:97:12:ea'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Paul MainFloor'
+
+  - platform: mqtt
+    state_topic: 'monitor/Basement/b4:f1:da:97:12:ea'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Paul Basement'
+
+  - platform: mqtt
+    state_topic: 'monitor/MasterBedroom/b4:f1:da:97:12:ea'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Paul MasterBedroom'
+
+  - platform: min_max
+    name: "Paul Home Occupancy Confidence"
+    type: mean
+    round_digits: 0
+    entity_ids:
+      - sensor.paul_basement
+      - sensor.paul_masterbedroom
+      - sensor.paul_familyroom
+      - sensor.paul_mainfloor
+
+  - platform: mqtt
+    state_topic: 'monitor/FamilyRoom/0c:d7:46:bd:2b:ea'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Kristina FamilyRoom'
+
+  - platform: mqtt
+    state_topic: 'monitor/MainFloor/0c:d7:46:bd:2b:ea'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Kristina MainFloor'
+
+  - platform: mqtt
+    state_topic: 'monitor/Basement/0c:d7:46:bd:2b:ea'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Kristina Basement'
+
+  - platform: mqtt
+    state_topic: 'monitor/MasterBedroom/0c:d7:46:bd:2b:ea'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Kristina MasterBedroom'
+  
+  - platform: mqtt
+    state_topic: 'monitor/FamilyRoom/DC:0D:30:46:09:59'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Kristina Beacon'
+
+  - platform: min_max
+    name: "Kristina Home Occupancy Confidence"
+    type: mean
+    round_digits: 0
+    entity_ids:
+      - sensor.kristina_basement
+      - sensor.kristina_masterbedroom
+      - sensor.kristina_familyroom
+      - sensor.kristina_mainfloor
+
+  - platform: mqtt
+    state_topic: 'monitor/FamilyRoom/58:E6:BA:3F:A3:F4'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Tristan FamilyRoom'
+
+  - platform: mqtt
+    state_topic: 'monitor/MainFloor/58:E6:BA:3F:A3:F4'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Tristian MainFloor'
+
+  - platform: mqtt
+    state_topic: 'monitor/Basement/58:E6:BA:3F:A3:F4'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Tristan Basement'
+
+  - platform: mqtt
+    state_topic: 'monitor/MasterBedroom/58:E6:BA:3F:A3:F4'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Tristan MasterBedroom'
+
+  - platform: min_max
+    name: "Tristan Home Occupancy Confidence"
+    type: mean
+    round_digits: 0
+    entity_ids:
+      - sensor.tristan_basement
+      - sensor.tristan_masterbedroom
+      - sensor.tristan_familyroom
+      - sensor.tristan_mainfloor    
+
+  - platform: mqtt
+    state_topic: 'monitor/FamilyRoom/F8:2D:7C:34:97:57'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Sasha FamilyRoom'
+
+  - platform: mqtt
+    state_topic: 'monitor/MainFloor/F8:2D:7C:34:97:57'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Sasha MainFloor'
+
+  - platform: mqtt
+    state_topic: 'monitor/Basement/F8:2D:7C:34:97:57'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Sasha Basement'
+
+  - platform: mqtt
+    state_topic: 'monitor/MasterBedroom/F8:2D:7C:34:97:57'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Sasha MasterBedroom'
+
+  - platform: min_max
+    name: "Sasha Home Occupancy Confidence"
+    type: mean
+    round_digits: 0
+    entity_ids:
+      - sensor.sasha_basement
+      - sensor.sasha_masterbedroom
+      - sensor.sasba_familyroom
+      - sensor.sasha_mainfloor    
+
+
+  - platform: systemmonitor
+    resources:
+       - type: memory_free
+       - type: memory_use_percent
+       - type: load_1m
+       - type: load_5m
+       - type: load_15m
+       - type: processor_use
+       - type: network_in
+         arg: eth0
+       - type: network_out
+         arg: eth0  
