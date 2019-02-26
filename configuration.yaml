@@ -96,9 +96,10 @@ sun:
 
 # SSL configuration
 http:
+  api_password: !secret http_password
   base_url: !secret my_url
-  ssl_certificate: /ssl/fullchain.pem
-  ssl_key: /ssl/privkey.pem
+  ssl_certificate: !secret ssl_certificate_path
+  ssl_key: !secret ssl_private_key
 
 # Weather
 weather:
