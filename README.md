@@ -2,7 +2,6 @@
 
 'My Home Automation Setup'
 
-=======
 ***TL;DR***: Home Assistant, Node-Red, MQTT, Homeseer with mcsMQTT plugin based home automation configuration.
 
 
