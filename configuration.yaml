@@ -174,3 +174,11 @@ media_player:
   - platform: spotify
     client_id: !secret spotify_clientid
     client_secret: !secret spotify_secret
+
+- alias: 'Misc: Update config if travis build is successfull'
+  trigger:
+    platform: state
+    entity_id: sensor.paulmona_myhomeassistantconfig_last_build_state
+    to: 'passed'
+  action:
+    - service: script.git_pull  

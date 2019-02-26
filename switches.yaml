@@ -21,6 +21,12 @@
     icon: mdi:power-plug
     optimistic: false
 
+  - platform: command_line
+    switches:
+      git_pull:
+        command_on: "/config/gitpull.sh"
+        command_off: "pwd"  
+
 #  - platform: mqtt
 #    name: "Garage Door"
 #    state_topic: homeseer/Garage/Garage_Door/Garage_Door_Status

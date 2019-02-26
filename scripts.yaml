@@ -1,0 +1,7 @@
+# HA Scripts
+
+git_pull:
+  alias: Update Configuration
+  sequence:
+    - service: switch.turn_on
+      entity_id: switch.gitpull
