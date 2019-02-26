@@ -54,5 +54,7 @@ implemented a HomeSeer plugin called mcsMQTT so that I can use Homeseer for what
  * Blind Control
     * MK Smart House ESP8266 Based Blind tilt - https://www.mksmarthouse.com/shop/Blinds-Control-p93393095
 
+ * Harmony Remote   
+
  * I'm sure I'm missing some other things.
 
