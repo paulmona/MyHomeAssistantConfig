@@ -22,9 +22,9 @@ I've long held that voice is the key to "seemless" home automation - what's the 
 
 # *Hardware Platform*
 
-    * Homeseer Hometroller Zee S2
-    * Hass.io on Raspberry Pi 3B (Home Assistant and Node-Red)
-    * Mosquitto an Maria run in Docker Containers on my QNAP NAS
+ *  Homeseer Hometroller Zee S2
+ *  Hass.io on Raspberry Pi 3B (Home Assistant and Node-Red)
+ *  Mosquitto an Maria run in Docker Containers on my QNAP NAS
 
 # *Automation Hardware*
 
