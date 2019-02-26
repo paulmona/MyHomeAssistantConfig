@@ -2,12 +2,10 @@ language: python
 python:
   - "3.6"
 before_install:
-  - mkdir /config
-  - cd /config
   - mv travis_secrets.yaml secrets.yaml
-  - mkdir /config/ssl
-  - mv travis-fullchain.pem.txt /config/ssl
-  - mv travis-privatekey.pem.txt /config/ssl
+  - mkdir ssl/
+  - mv travis-fullchain.pem.txt ssl/
+  - mv travis-privatekey.pem.txt ssl/
 install:
   - pip3 install homeassistant
 script:
