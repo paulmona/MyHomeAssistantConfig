@@ -1,10 +1,8 @@
 # MyHomeAssistantConfig
 
-'My Home Automation Setup'
+`My Home Automation Setup`
 
 ***TL;DR***: Home Assistant, Node-Red, MQTT, Homeseer with mcsMQTT plugin based home automation configuration.
-
-
 
 My journey with home automation started back in the Insteon days playing with a simple switch but I found it rather immature at the time.  About 5 years ago I implemented Z-wave and Vera in my home automating lights, switches and my garage door using a Fortezza Mimo Light contact switch before Wifi solutions were readily available.  I always 
 found Vera rather clunky, software upgrades were prone to failure and automations were not very straighforward.  About 3 years ago I switched to Homeseer, and while the interface is clunky and it's made on top of a pretty legacy code base it was much more powerful (and expensive) than Vera.  Things got interesting once Homeseer started to 
