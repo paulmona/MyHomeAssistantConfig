@@ -8,11 +8,11 @@ My journey with home automation started back in the Insteon days playing with a 
 found Vera rather clunky, software upgrades were prone to failure and automations were not very straighforward.  About 3 years ago I switched to Homeseer, and while the interface is clunky and it's made on top of a pretty legacy code base it was much more powerful (and expensive) than Vera.  Things got interesting once Homeseer started to 
 play with Google Assistant.  
 
-I've long held that voice is the key to "seemless" home automation - what's the point in pulling out your phone to turn on a light, when you can just speak it?  I quickly integrated cameras with Homeseer, Google Assistant, Hue Lights (my out switches don't have the depth for ZWave switches), Nest Thermostats, etc etc.  In the last few weeks I moved to Home Assistant to get a more modern platform, hoever having played with Home Assistant's Z-Wave implementation it left a GREAT DEAL to be desired.  So I implemented a HomeSeer plugin called mcsMQTT so that I can use Homeseer for what it's REALLLY good at (Z-Wave) and Home Assistant aand Node-Red for what they are good at. 
+I've long held that voice is the key to "seemless" home automation - what's the point in pulling out your phone to turn on a light, when you can just speak it?  I quickly integrated cameras with Homeseer, Google Assistant, Hue Lights (my out switches don't have the depth for ZWave switches), Nest Thermostats, etc etc.  In the last few weeks I moved to Home Assistant to get a more modern platform, hoever having played with Home Assistant's Z-Wave implementation it left a GREAT DEAL to be desired.  So I implemented a HomeSeer plugin called mcsMQTT so that I can use Homeseer for what it's REALLLY good at (Z-Wave) and Home Assistant aand Node-Red for what they are good at. T
 
 # *Automated Testing using Github and TravisCI*
 
-I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integrates seamlessly with git.  Commits and Pushes are done from VS Code - TravisCI then does a test by running "hass -c myconfig check_config" against my configuration Yaml files - I have a travisci sensor in Home Assistant and when this becomes "Passed" Home Assistant then executes a simple Shell Script (gitpull.sh) to do a pull request to my live system.  
+I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integrates seamlessly with git.  Commits and Pushes are done from VS Code - TravisCI then does a test by running "hass -c myconfig check_config" against my configuration Yaml files - I have a travisci sensor in Home Assistant and when this becomes "Passed" Home Assistant then executes a simple Shell Script (gitpull.sh) to do a pull request to my live system.
 
 # *My Current Home Automation Components*
 
@@ -26,7 +26,7 @@ I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integ
 
 # *Hardware Platform*
 
- *  Homeseer Hometroller Zee S2
+ *  Homeseer Hometroller Zee S2 (Homeseer on a Raspberry Pi)
  *  Hass.io on Raspberry Pi 3B (Home Assistant and Node-Red)
  *  Mosquitto an Maria run in Docker Containers on my QNAP NAS
 
