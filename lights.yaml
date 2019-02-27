@@ -1,17 +1,3 @@
-# Homeseer device 229 Family Room Hall Light
-#  - platform: mqtt
-#    name: "Family Room Hall Light"
-#    payload_on: "99"
-#    payload_off: "0"
-#    unique_id: "FamulyRoomHallLight"
-#    brightness_scale: "99"
-#    on_command_type: brightness
-#    brightness_state_topic: "homeseer/Family_Room/Light/Family_Room_Hallway"
-#    brightness_command_topic: "homeseer/Family_Room/Light/Family_Room_Hallway/Control"
-#    state_topic: "homeseer/Family_Room/Light/Family_Room_Hallway"
-#    command_topic: "homeseer/Family_Room/Light/Family_Room_Hallway/Control"
-#    optimistic: false
-
 # Homeseer device 452 Family Room Hall Light
   - platform: mqtt
     name: "Family Room Hall Light"
