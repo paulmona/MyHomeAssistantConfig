@@ -118,6 +118,9 @@ mqtt:
 
 # Nest Configuration
 nest:
+  binary_sensors:
+    monitored_conditions:
+      - 'away'
   client_id: !secret nest_id
   client_secret: !secret nest_secret
 
