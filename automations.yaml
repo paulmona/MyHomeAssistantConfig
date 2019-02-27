@@ -6,10 +6,10 @@
     action:
     - service: script.git_pull
 
-  - alias: Daily Backup at 3 AM
+  - alias: Daily Backup at 2 AM
     trigger:
       platform: time
-      at: '16:24:00'
+      at: '02:00:00'
     action:
       service: hassio.snapshot_full
      
