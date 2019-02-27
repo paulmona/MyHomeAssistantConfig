@@ -262,7 +262,7 @@
       - last_build_state
 
   - platform: darksky
-    api_key: darksky_key
+    api_key: !secret darksky_key
     forecast:
       - 0
     monitored_conditions:
