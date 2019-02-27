@@ -21,7 +21,7 @@ I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integ
  *  HomeSeer - For Purely Z-Wave with mcsMQTT Plugin
  *  Home Assistant - For modern code base, integration with 3rd party devices and services, modern front end (Lovelace) etc.
  *  Node-Red - For automation
- *  Mosquitto MQTT - For automation
+ *  Mosquitto MQTT - for passing topics between Homeseer, HA, Node-Red and my ESP2866 based blinds
  *  MariaDB - For HA Recorder History
 
 # *Hardware Platform*
