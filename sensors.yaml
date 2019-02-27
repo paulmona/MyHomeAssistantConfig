@@ -260,3 +260,17 @@
       - MyHomeAssistantConfig
     monitored_conditions:
       - last_build_state
+
+  - platform: darksky
+    api_key: darksky_key
+    forecast:
+      - 0
+    monitored_conditions:
+      - temperature
+      - apparent_temperature
+    scan_interval:
+      days: 0
+      hours: 1
+      minutes: 0
+      seconds: 0
+      milliseconds: 0      
