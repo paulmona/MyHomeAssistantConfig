@@ -273,4 +273,37 @@
       hours: 1
       minutes: 0
       seconds: 0
-      milliseconds: 0      
+      milliseconds: 0
+
+# Homeseer node ID 313
+  - platform: mqtt
+    name: "Family Room Radiator Smart Switch KWh"
+    unique_id: "FamilyRoomRadiatorSmartSwitchKwh"
+    icon: mdi:power-plug
+    unit_of_measurement: "KWh"
+    state_topic: homeseer/Family_Room/Radiator/KWh    
+
+# Homeseer node ID 314
+  - platform: mqtt
+    name: "Family Room Radiator Smart Switch Watts"
+    unique_id: "FamilyRoomRadiatorSmartSwitchWatts"
+    icon: mdi:power-plug
+    unit_of_measurement: "Watts"
+    state_topic: homeseer/Family_Room/Radiator/Watts    
+
+# Homeseer node ID 315
+  - platform: mqtt
+    name: "Family Room Radiator Smart Switch Volts"
+    unique_id: "FamilyRoomRadiatorSmartSwitchVolts"
+    icon: mdi:power-plug
+    unit_of_measurement: "Volts"
+    state_topic: homeseer/Family_Room/Radiator/Volts
+
+# Homeseer node ID 316
+  - platform: mqtt
+    name: "Family Room Radiator Smart Switch Amps"
+    unique_id: "FamilyRoomRadiatorSmartSwitchAmps"
+    icon: mdi:power-plug
+    unit_of_measurement: "Amps"
+    state_topic: homeseer/Family_Room/Radiator/Amps    
+
