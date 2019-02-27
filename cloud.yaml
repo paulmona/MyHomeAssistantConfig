@@ -16,14 +16,18 @@
         - input_boolean
         - scene
         - script
+        - automation
 
       exclude_entities:
-        - all.devices
-        - all.remotes
-        - all.speakers
+        - group.all_automations
+        - group.all_devices
+        - group.all_remotes
+        - group.all_scripts
+        - group.calendar
         - light.front_hall_1
         - light.front_hall_2
         - light.front_yard_1
         - light.garage_light_2
         - light.garage_door_light_1
+        - switch.git_pull
         
