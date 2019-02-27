@@ -123,7 +123,7 @@ nest:
       - 'away'
       - 'has_leaf'
       - 'fan'
-      
+
   client_id: !secret nest_id
   client_secret: !secret nest_secret
 
@@ -182,3 +182,9 @@ media_player:
   - platform: spotify
     client_id: !secret spotify_clientid
     client_secret: !secret spotify_secret
+
+rest_command:
+  do_backup:
+    url: !secret backup_url
+    method: GET
+    verify_ssl: false
