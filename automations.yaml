@@ -4,4 +4,4 @@
       entity_id: sensor.paulmona_myhomeassistantconfig_last_build_state
       to: 'passed'
     action:
-    - service: script.git_pull  
+    - service: script.git_pull
