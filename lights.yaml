@@ -9,7 +9,7 @@
     brightness_state_topic: "homeseer/Family_Room/Dimmer/Family_Room_Hall_Light"
     brightness_command_topic: "homeseer/Family_Room/Dimmer/Family_Room_Hall_Light/Control"
     state_topic: "homeseer/Family_Room/Dimmer/Family_Room_Hall_Light"
-    command_topic: "homeseer/Family_Room/Dimmer/Family_Room_Hall_Light"
+    command_topic: "homeseer/Family_Room/Dimmer/Family_Room_Hall_Light/Control"
     optimistic: false
 
 # Homeseer device 14 Living Room Lights
