@@ -102,8 +102,11 @@ http:
 
 # Weather
 weather:
-  - platform: yweather
-
+  - platform: darksky
+    api_key: !secret darksky_key
+    latitude: !secret mylatitude 
+    longitude: !secret mylongtitude
+    
 mqtt:
     port: 1883
     broker: 192.168.0.68 
