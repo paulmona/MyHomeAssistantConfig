@@ -157,9 +157,9 @@ cover:
     name: "Garage Door"
     command_topic: "homeseer/Garage/Garage_Door/Control"
     state_topic: "homeseer/Garage/Door/Status"
-    payload_open: "0"
-    payload_close: "0"
-    payload_stop: "0"
+    payload_open: "On"
+    payload_close: "On"
+    payload_stop: "On"
     state_open: "0"
     state_closed: "255"
     optimistic: false
