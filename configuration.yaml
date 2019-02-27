@@ -96,7 +96,6 @@ sun:
 
 # SSL configuration
 http:
-  api_password: !secret http_password
   base_url: !secret my_url
   ssl_certificate: !secret ssl_certificate
   ssl_key: !secret ssl_private_key
