@@ -9,9 +9,8 @@
   - alias: Daily Backup at 3 AM
     trigger:
       platform: time
-      at: '16:20:00'
+      at: '16:24:00'
     action:
       service: hassio.snapshot_full
-      data_template:
-      name: "Automated Backup"
+     
   
