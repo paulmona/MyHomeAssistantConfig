@@ -121,6 +121,9 @@ nest:
   binary_sensors:
     monitored_conditions:
       - 'away'
+      - 'has_leaf'
+      - 'fan'
+      
   client_id: !secret nest_id
   client_secret: !secret nest_secret
 
