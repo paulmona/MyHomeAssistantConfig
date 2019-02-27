@@ -1,0 +1,10 @@
+  familyroom:
+    name: Radiator
+    icon: mdi:radiator
+    view: false
+    entities:
+      - switch.family_room_heater
+      - sensor.family_room_radiator_smart_switch_kwh
+      - sensor.family_room_radiator_smart_switch_watts
+      - sensor.family_room_radiator_smart_switch_amps
+      - sensor.family_room_radiator_smart_switch_volts
