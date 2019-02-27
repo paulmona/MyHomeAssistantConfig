@@ -307,3 +307,34 @@
     unit_of_measurement: "Amps"
     state_topic: homeseer/Family_Room/Radiator/Amps    
 
+# Homeseer node ID 454
+  - platform: mqtt
+    name: "Master Bedroom Grow Light KWh"
+    unique_id: "MasterBedroomGrowLightSmartSwitchKwh"
+    icon: mdi:power-plug
+    unit_of_measurement: "KWh"
+    state_topic: homeseer/Master_Bedroom/Grow_Light_Smart_Switch/KWh    
+
+# Homeseer node ID 455
+  - platform: mqtt
+    name: "Master Bedroom Grow Light Watts"
+    unique_id: "MasterBedroomGrowLightSmartSwitchWatts"
+    icon: mdi:power-plug
+    unit_of_measurement: "Watts"
+    state_topic: homeseer/Master_Bedroom/Grow_Light_Smart_Switch/Watts    
+
+# Homeseer node ID 456
+  - platform: mqtt
+    name: "Master Bedroom Grow Light Volts"
+    unique_id: "MasterBedroomGrowLightSmartSwitchVolts"
+    icon: mdi:power-plug
+    unit_of_measurement: "Volts"
+    state_topic: homeseer/Master_Bedroom/Grow_Light_Smart_Switch/Volts
+
+# Homeseer node ID 457
+  - platform: mqtt
+    name: "Family Room Radiator Smart Switch Amps"
+    unique_id: "FamilyRoomRadiatorSmartSwitchAmps"
+    icon: mdi:power-plug
+    unit_of_measurement: "Amps"
+    state_topic: homeseer/Family_Room/Radiator/Amps    

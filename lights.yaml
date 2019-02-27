@@ -1,5 +1,4 @@
 # Homeseer device 229 Family Room Hall Light
-
 #  - platform: mqtt
 #    name: "Family Room Hall Light"
 #    payload_on: "99"
@@ -13,23 +12,21 @@
 #    command_topic: "homeseer/Family_Room/Light/Family_Room_Hallway/Control"
 #    optimistic: false
 
-# Homeseer device 232 Family Room Hall Light
-
+# Homeseer device 452 Family Room Hall Light
   - platform: mqtt
-    name: "Family Room Stairs Light"
+    name: "Family Room Hall Light"
     payload_on: "99"
     payload_off: "0"
-    unique_id: "FamulyRoomStairsLight"
+    unique_id: "FamulyRoomHallLight"
     brightness_scale: "99"
     on_command_type: brightness
-    brightness_state_topic: "homeseer/Basement/PS4Smart_Switch"
-    brightness_command_topic: "homeseer/Basement/PS4Smart_Switch/Control"
-    state_topic: "homeseer/Basement/PS4Smart_Switch"
-    command_topic: "homeseer/Basement/PS4Smart_Switch/Control"
+    brightness_state_topic: "homeseer/Family_Room/Dimmer/Family_Room_Hall_Light"
+    brightness_command_topic: "homeseer/Family_Room/Dimmer/Family_Room_Hall_Light/Control"
+    state_topic: "homeseer/Family_Room/Dimmer/Family_Room_Hall_Light"
+    command_topic: "homeseer/Family_Room/Dimmer/Family_Room_Hall_Light"
     optimistic: false
 
 # Homeseer device 14 Living Room Lights
-
   - platform: mqtt
     name: "Living Room Lights"
     payload_on: "99"
@@ -44,7 +41,6 @@
     optimistic: false
 
 # Homeseer Device 9 Master Bathroom Dimmer
-
   - platform: mqtt
     name: "Master Bathroom Overhead Lights"
     payload_on: "99"
@@ -59,7 +55,6 @@
     optimistic: false
 
 # Homeseer Device 223 Shed Exterior
-
   - platform: mqtt
     name: "Shed Exterior Lights"
     payload_on: "99"
@@ -73,7 +68,6 @@
     optimistic: false
 
 # Homeseer Device 226 Shed Interior Light
-
   - platform: mqtt
     name: "Shed Interior Lights"
     payload_on: "99"
@@ -87,7 +81,6 @@
     optimistic: false    
   
 # Homeseer Device 18 Shannon Overhead
-
   - platform: mqtt
     name: "Shannon Overhead Lights"
     payload_on: "99"
@@ -102,7 +95,6 @@
     optimistic: false
 
 # Homeseer Device 17 Maegan Overhead
-
   - platform: mqtt
     name: "Maegan Overhead Lights"
     payload_on: "99"
@@ -117,7 +109,6 @@
     optimistic: false
 
 # Homeseer Device 15 Orson overhead
-
   - platform: mqtt
     name: "Orson Overhead Lights"
     payload_on: "99"
@@ -132,7 +123,6 @@
     optimistic: false
 
 # Homeseer 138 Deskside Lamp Switch
-
   - platform: mqtt
     name: "Tristan Deskside Lamp"
     payload_on: "On"
@@ -143,7 +133,6 @@
     optimistic: false
 
 # Homeseer 137 Bedside Lamp
-
   - platform: mqtt
     name: "Tristan Bedside Lamp"
     payload_on: "On"
@@ -154,7 +143,6 @@
     optimistic: false
 
 # Homeseer 13 Dining Room overhead
-
   - platform: mqtt
     name: "Dining Room Overhead Light"
     payload_on: "99"
@@ -169,7 +157,6 @@
     optimistic: false
 
 # Homeseer 12 Kitchen Overhead
-
   - platform: mqtt
     name: "Kitchen Overhead Light-2"
     payload_on: "99"
@@ -184,7 +171,6 @@
     optimistic: false
 
 # Homeseer 13 kitchen main light
-
   - platform: mqtt
     name: "Kitchen Overhead Light-1"
     payload_on: "99"
@@ -199,7 +185,6 @@
     optimistic: false
 
 # Homeseer device 16 Kitchen Island Lights
-
   - platform: mqtt
     name: "Kitchen Island Lights"
     payload_on: "99"
@@ -210,7 +195,6 @@
     optimistic: false
 
 # Homeseer 318 Garage Workbench Light
-
   - platform: mqtt
     name: "Garage Workbench Light"
     payload_on: "On"
@@ -221,7 +205,6 @@
     optimistic: false
 
 # Homeseer 311 Sasha overhead light switch
-
   - platform: mqtt
     name: "Sasha Overhead Light"
     payload_on: "255"
@@ -232,7 +215,6 @@
     optimistic: false
 
 # Homeseer 8 Master Bedroom Overhead Light 
-
   - platform: mqtt
     name: "Master Bedroom Overhead Light"
     payload_on: "99"
@@ -247,7 +229,6 @@
     optimistic: false
 
 # Group for Mainfloor Lights
-
   - platform: group
     name: "Main Floor Lights"
     entities: 

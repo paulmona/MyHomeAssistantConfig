@@ -21,6 +21,18 @@
     icon: mdi:power-plug
     optimistic: false
 
+# Homeseer Device 459 Grow Light Smart Switch
+  - platform: mqtt
+    name: "Grow Light"
+    state_topic: "homeseer/Master_Bedroom/Grow_Light_Smart_Switch"
+    command_topic: "homeseer/Master_Bedroom/Grow_Light_Smart_Switch/Control"
+    payload_on: "255"
+    payload_off: "0"
+    state_on: "255"
+    state_off: "0"
+    icon: mdi:power-plug
+    optimistic: false
+
   - platform: command_line
     switches:
       git_pull:
