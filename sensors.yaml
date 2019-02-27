@@ -333,8 +333,8 @@
 
 # Homeseer node ID 457
   - platform: mqtt
-    name: "Family Room Radiator Smart Switch Amps"
-    unique_id: "FamilyRoomRadiatorSmartSwitchAmps"
+    name: "Master Bedroom Grow Light Volts"
+    unique_id: "MasterBedroomGrowLightAmps"
     icon: mdi:power-plug
     unit_of_measurement: "Amps"
-    state_topic: homeseer/Family_Room/Radiator/Amps    
+    state_topic: homeseer/Master_Bedroom/Grow_Light_Smart_Switch/Amps    
