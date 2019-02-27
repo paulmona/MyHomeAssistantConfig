@@ -9,9 +9,9 @@
   - alias: Daily Backup at 3 AM
     trigger:
       platform: time
-      at: '16:06:00'
+      at: '16:20:00'
     action:
-    - service: hassio.snapshot_full
+      service: hassio.snapshot_full
       data_template:
-      name: Automated Backup {{ now().strftime('%Y-%m-%d') }}
+      name: "Automated Backup:" "{{now().strftime('%Y-%m-%d') }}"
   
