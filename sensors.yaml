@@ -338,3 +338,11 @@
     icon: mdi:power-plug
     unit_of_measurement: "Amps"
     state_topic: homeseer/Master_Bedroom/Grow_Light_Smart_Switch/Amps    
+
+# Calculate Family Room Heater Cost
+  - platform: template
+    sensors:
+      total_power_cost:
+      value_template: '{{ ((sensor.family_room_radiator_smart_switch_kwh | float * 1 / 1000 *9.40)) | round(2) }}'
+      friendly_name: 'Current cost'
+      unit_of_measurement: 'Cad'  
