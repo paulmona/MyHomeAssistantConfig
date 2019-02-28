@@ -343,6 +343,6 @@
   - platform: template
     sensors:
       total_power_cost:
-      value_template: '{{ ((sensor.family_room_radiator_smart_switch_kwh | float * 1 / 1000 *9.40)) | round(2) }}'
-      friendly_name: 'Current cost'
-      unit_of_measurement: 'Cad'  
+        value_template: '{{ ((sensor.family_room_radiator_smart_switch_kwh | float * 1 / 1000 *9.40)) | round(2) }}'
+        friendly_name: 'Current cost'
+        unit_of_measurement: 'Cad'  
