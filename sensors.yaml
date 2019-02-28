@@ -343,7 +343,7 @@
   - platform: template
     sensors:
       total_power_cost:
-        entity-id:
+        entity_id:
           - sensor.family_room_radiator_smart_switch_kwh 
         value_template: '{{ ((sensor.family_room_radiator_smart_switch_kwh | float * 1 / 1000 *9.40)) | round(2) }}'
         friendly_name: 'Current cost'
