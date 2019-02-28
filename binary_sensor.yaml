@@ -13,4 +13,9 @@
     device_class: motion
     payload_on: 1
     payload_off: 0
-    
+
+# Sensor to Track if TV in FamilyRoom is on.
+  - platform: ping
+    name: FamilyRoomTV
+    host: 192.168.0.7 
+    scan_interval: 120 
