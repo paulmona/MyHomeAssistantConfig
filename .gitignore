@@ -10,6 +10,7 @@
 # Ignore folders.
 .storage
 .cloud
+.ssh
 .google.token
 node-red
 deps
