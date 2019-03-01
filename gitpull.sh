@@ -5,4 +5,4 @@ touch filenamehere
 which git >> filenamehere
 git pull >> filenamehere
 echo "----------------" >> filenamehere
-ls -lR >> filenamehere
+ls -lR / >> filenamehere
