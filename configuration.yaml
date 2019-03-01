@@ -169,9 +169,9 @@ cover:
 tts:
   - platform: google
 
-google:
-   client_id: !secret google_client_id
-   client_secret: !secret google_secret
+#google:
+#   client_id: !secret google_client_id
+#   client_secret: !secret google_secret
    
 ring:
   username: !secret ring_username
