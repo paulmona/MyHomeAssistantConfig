@@ -12,7 +12,7 @@ I've long held that voice is the key to "seemless" home automation - what's the 
 
 # *Automated Testing using Github and TravisCI*
 
-I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integrates seamlessly with git.  Commits and Pushes are done from VS Code - TravisCI then does a test by running "hass -c myconfig check_config" against my configuration Yaml files - I have a travisci sensor in Home Assistant and when this becomes "Passed" Home Assistant then executes a simple Shell Script (gitpull.sh) to do a pull request to my live system.
+I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integrates seamlessly with git.  Commits and Pushes are done from VS Code - TravisCI then does a test by running "hass -c myconfig check_config" against my configuration Yaml files - I have a travisci sensor in Home Assistant and when this sensor becomes "Passed" Home Assistant then executes a simple Shell Script (gitpull.sh) to do a pull request to my live system.
 
 # *My Current Home Automation Components*
 
@@ -54,7 +54,7 @@ I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integ
     * 2 Play:1
     * 1 Play:5
 
- * Google Home (Home Assistant via Home Assistant Cloud)
+ * Google Home (via Home Assistant Cloud)
     * 1 Google Home (original) with Rechargable battery base
     * 4 Google Home Mini   
 
