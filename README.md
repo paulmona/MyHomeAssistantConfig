@@ -2,6 +2,8 @@
 
 # *My Home Automation Setup*
 
+Last Update: 3/1/2019
+
 ***TL;DR***: Home Assistant, Node-Red, MQTT, Homeseer with mcsMQTT plugin based home automation configuration.
 
 My journey with home automation started back in the Insteon days playing with a simple switch but I found it rather immature at the time.  About 5 years ago I implemented Z-wave and Vera in my home automating lights, switches and my garage door using a Fortezza Mimo Light contact switch before Wifi solutions were readily available.  I always 
