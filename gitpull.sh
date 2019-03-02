@@ -2,5 +2,5 @@
 
 cd /config
 touch lastpull
-date >> lastpull
+date > lastpull
 /usr/bin/git pull >> lastpull
