@@ -18,7 +18,7 @@ I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integ
 
 # *My Current Home Automation Components*
 
-# *The Brains*
+# *The Brains aka Software*
 
  *  HomeSeer - For Purely Z-Wave with mcsMQTT Plugin
  *  Home Assistant - For modern code base, integration with 3rd party devices and services, modern front end (Lovelace) etc.
