@@ -26,8 +26,8 @@ I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integ
 
 # *Hardware Platform*
 
- *  Homeseer Hometroller Zee S2 (Homeseer on a Raspberry Pi)
- *  Hass.io on Raspberry Pi 3B (Home Assistant and Node-Red)
+ *  Homeseer Hometroller ZeeS2 (Homeseer on a Raspberry Pi)
+ *  Hass.io on Raspberry Pi 3B (Home Assistant and Node-Red) eventually moving to docker on QNAP.
  *  Mosquitto and Maria run in Docker Containers on my QNAP NAS
 
 # *Automation Hardware*
