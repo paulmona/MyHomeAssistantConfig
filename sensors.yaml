@@ -62,6 +62,17 @@
     unit_of_measurement: "%"
     state_topic: homeseer/Front_Hall/MultiSensor/Relative_Humidity
 
+  - platform: filter
+    name: "Filtered Realistic Front Hall Temperature"
+    entity_id: sensor.front_hall_multiSensor_temperature
+    filters:
+      - filter: outlier
+        window_size: 4
+        radius: 4.0
+      - filter: lowpass
+        time_constant: 10
+        precision: 2
+
   - platform: min_max
     name: "Mean House Temperature"
     type: mean
