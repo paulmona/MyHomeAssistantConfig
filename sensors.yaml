@@ -267,6 +267,7 @@
   
   - platform: travisci
     api_key: !secret github_token
+    branch: MoveToDocker
     repository:
       - MyHomeAssistantConfig
     monitored_conditions:
