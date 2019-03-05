@@ -72,9 +72,9 @@ zone 1:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
 
-zwave:
-  usb_path: /dev/ttyACM0
-  network_key: !secret zwave_key
+#zwave:
+#  usb_path: /dev/ttyACM0
+#  network_key: !secret zwave_key
 
 # Discover some devices automatically
 discovery:
