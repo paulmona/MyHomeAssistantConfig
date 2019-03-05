@@ -48,7 +48,7 @@ automation: !include automations.yaml
 # Scripts - Also not used (yet)
 script: !include scripts.yaml
 
-system_health:
+#system_health:
 
 # Show links to resources in log and frontend
 #introduction:
@@ -71,10 +71,6 @@ zone 1:
 # updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
-
-#zwave:
-#  usb_path: /dev/ttyACM0
-#  network_key: !secret zwave_key
 
 # Discover some devices automatically
 discovery:
@@ -183,8 +179,8 @@ media_player:
     client_id: !secret spotify_clientid
     client_secret: !secret spotify_secret
 
-rest_command:
-  do_backup:
-    url: !secret backup_url
-    method: GET
-    verify_ssl: false
+#rest_command:
+#  do_backup:
+#    url: !secret backup_url
+#    method: GET
+#    verify_ssl: false
