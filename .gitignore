@@ -11,6 +11,7 @@
 .storage
 .cloud
 .ssh
+ssl
 .google.token
 node-red
 deps
