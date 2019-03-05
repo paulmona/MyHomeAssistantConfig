@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd /config
-touch lastpull
-date > lastpull
-/usr/bin/git pull >> lastpull
-/usr/bin/hassio homeassistant restart
+cd /share/Public/Containers/HomeAssistant
+touch /share/Public/Containers/HomeAssistant/lastpull
+date > /share/Public/Containers/HomeAssistant/lastpull
+/usr/bin/git pull >> /share/Public/Containers/HomeAssistant/lastpull
+/share/CACHEDEV1_DATA/.qpkg/container-station/bin/docker restart home-assistant
