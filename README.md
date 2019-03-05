@@ -32,7 +32,7 @@ I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integ
  *  Hass.io on QNap NAS on "Container Station" aka Docker.  Originally ran Hassio on Pi 3b.
  *  Mosquitto and Maria run in Docker Containers on my QNAP NAS
 
-Moved to Docker on March 5th by creating a branch of my configuration and autmating a git pull to my QNap once happy I will merge back to master.  Best thing?  Family didn't notice as it was trasparent to them.
+Moved to Docker on March 5th by creating a branch of my configuration and automating a git pull to my QNap once happy I will merge back to master.  Best thing?  Family didn't notice as it was trasparent to them.
 
 # *Automation Hardware*
 
