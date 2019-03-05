@@ -174,10 +174,10 @@ ring:
   password: !secret ring_password 
 
 # Example configuration.yaml entry
-media_player:
-  - platform: spotify
-    client_id: !secret spotify_clientid
-    client_secret: !secret spotify_secret
+#media_player:
+#  - platform: spotify
+#    client_id: !secret spotify_clientid
+#    client_secret: !secret spotify_secret
 
 #rest_command:
 #  do_backup:
