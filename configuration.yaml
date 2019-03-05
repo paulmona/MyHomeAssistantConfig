@@ -113,7 +113,7 @@ mqtt:
     username: hass
     password: !secret mqtt_password
     discovery: true
-    client_id: hassio
+    client_id: homeassistantdocker
     discovery_prefix: homeseer
 
 # Nest Configuration
