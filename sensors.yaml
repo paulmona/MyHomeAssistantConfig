@@ -267,7 +267,6 @@
   
   - platform: travisci
     api_key: !secret github_token
-    branch: master
     repository:
       - MyHomeAssistantConfig
     monitored_conditions:
