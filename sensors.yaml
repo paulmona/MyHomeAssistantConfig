@@ -353,7 +353,7 @@
 # Calculate Family Room Heater Cost
   - platform: template
     sensors:
-      total_power_cost:
+      total_family_room_heater_cost:
         entity_id:
           - sensor.family_room_radiator_smart_switch_kwh 
         value_template: '{{ ((states.sensor.family_room_radiator_smart_switch_kwh.state | float * 1 / 1000 *9.40)) | round(2) }}'
