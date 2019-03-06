@@ -359,3 +359,9 @@
         value_template: '{{ ((states.sensor.family_room_radiator_smart_switch_kwh.state | float * 1 / 1000 *9.40)) | round(2) }}'
         friendly_name: 'Current cost'
         unit_of_measurement: 'Cad'  
+
+# What's the latest release on Docker Hub (eventually I'll automatically pull and run this)
+  - platform: command_line
+    name:  Home Assistant Latest Docker
+    command:  curl -s -L https://registry.hub.docker.com/v2/repositories/homeassistant/home-assistant/tags/ | grep -Eo '"name":\s"[0-9.]*"' | head -1 | sed -e "s/\"name\":\s\"/${replace}/g" | sed -e "s/\"/${replace}/g"
+    scan_interval: 28800      
