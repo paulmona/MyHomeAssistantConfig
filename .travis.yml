@@ -1,12 +1,21 @@
 language: python
 python:
   - "3.6"
+
+services:
+  - docker
+
+notifications:
+  email:
+    on_success: never # default: change
+    on_failure: always # default: always    
+
 before_install:
   - mv travis_secrets.yaml secrets.yaml
   - mkdir ssl/
   - mv travis-fullchain.pem.txt ssl/fullchain.pem
   - mv travis-privatekey.pem.txt ssl/privkey.pem
-install:
-  - pip3 install homeassistant
+  - docker pull homeassistant/home-assistant:latest
+
 script:
-  - hass -c . --script check_config
+  -  ./travisconfigcheck.sh
