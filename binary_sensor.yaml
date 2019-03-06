@@ -17,5 +17,5 @@
 # Sensor to Track if TV in FamilyRoom is on.
   - platform: ping
     name: FamilyRoomTV
-    host: 192.168.0.7 
+    host: !secret tv_ipaddy 
     scan_interval: 120 
