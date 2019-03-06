@@ -105,7 +105,7 @@ weather:
     
 mqtt:
     port: 1883
-    broker: 192.168.0.68 
+    broker: 192.168.0.7 
     username: hass
     password: !secret mqtt_password
     discovery: true
