@@ -12,9 +12,6 @@ notifications:
 
 before_install:
   - mv travis_secrets.yaml secrets.yaml
-  - mkdir ssl/
-  - mv travis-fullchain.pem.txt ssl/fullchain.pem
-  - mv travis-privatekey.pem.txt ssl/privkey.pem
   - docker pull homeassistant/home-assistant:latest
 
 script:
