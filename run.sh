@@ -1,5 +1,7 @@
 #!/bin/bash
 docker pull homeassistant/home-assistant:latest
+docker stop home-assistant
+docker rm home-assistant
 /usr/bin/docker run -d -t \
     -v /share/Public/Containers/HomeAssistant:/config \
     -v /etc/localtime:/etc/localtime:ro \
