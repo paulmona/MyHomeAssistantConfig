@@ -62,6 +62,35 @@
     unit_of_measurement: "%"
     state_topic: homeseer/Front_Hall/MultiSensor/Relative_Humidity
 
+  - platform: mqtt
+    name: "Family Room MultiSensor Battery Level"
+    unique_id: "FamilyRoomMultiSensorBatteryLevel"
+    icon: mdi:battery
+    device_class: battery
+    unit_of_measurement: "%"
+    state_topic: homeseer/Family_Room/MultiSensor/Battery
+
+  - platform: mqtt
+    name: "Family Room MultiSensor Temperature"
+    unique_id: "Family Room MultiSensorTemperature"
+    device_class: temperature
+    unit_of_measurement: "C"
+    state_topic: homeseer/Family_Room/MultiSensor/Temperature
+
+  - platform: mqtt
+    name: "Family Room MultiSensor Light Level"
+    unique_id: "Family Room MultiSensorLightLevel"
+    device_class: illuminance
+    unit_of_measurement: "lx"
+    state_topic: homeseer/Family_Room/MultiSensor/LightLevel
+
+  - platform: mqtt
+    name: "Family Room MultiSensor Relative Humidity"
+    unique_id: "FamilyRoomMultiSensorRelativeHumidity"
+    device_class: humidity
+    unit_of_measurement: "%"
+    state_topic: homeseer/Family_Room/MultiSensor/Relative_Humidity
+
   - platform: filter
     name: "Filtered Realistic Front Hall Temperature"
     entity_id: sensor.front_hall_multiSensor_temperature
