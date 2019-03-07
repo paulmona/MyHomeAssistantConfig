@@ -35,5 +35,5 @@ harmony_family_room.conf
 google_calendars.yaml
 home-assistant_v2.db
 pyozw.sqlite
-
+watchtower-dockerrun.sh
 .gitsecret/keys/random_seed

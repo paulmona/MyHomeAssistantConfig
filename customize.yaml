@@ -8,3 +8,5 @@ device_tracker.sasha_iphone:
   friendly_name: Sasha
 device_tracker.shannon_android:
   friendly_name: Shannon
+sensor.total_power_cost:
+  friendly_name: Family Room Heater Cost
