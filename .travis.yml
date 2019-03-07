@@ -1,18 +1,16 @@
 language: python
 python:
-  - "3.6"
-
+- '3.6'
 services:
-  - docker
-
+- docker
 notifications:
   email:
-    on_success: never # default: change
-    on_failure: always # default: always    
-
+    on_success: never
+    on_failure: always
+  slack:
+    secure: Fy7FvjUjWFof3VVyrgBSwVjOTdn04O9INGy5lVGNeq2ZO9BY+gXvOtDHXdAK1JW9ssyYD5kNMrGmnF7KoTfvi1GT4PXiRUUsqfqa/4Wzp/vEZXkdoTZs62hbgPCkPUbxMgmr+hCgY6Zxok3u4Vaa1ZTrd1SzPgxMr6qSvMBqvWTWRcg9nBBiPJHH+bdqrKWVP9kiQD7TFAopc+isvSwuZ/Gq6o2G3CrVgWBhGE+S9osl5AD6dsv6S21EdBCLQ5irBuwbSZTvzLDzRE92DI5eCbB7eYmZqsz2aGuDhkij/0+bmEBAoImPRQtw2ZkMilH+IFqKg0O72nEbtbaDrTfGOB2dU2eEq1kR1rI10pFKAOCjfL1SfnYIFzAj/oSSEdh284N3LTjz4UV5Te6HRbv7XGHhqrnOw/B7RrKWammsVi3bib5mgTms1zIyo/tIcesomwyDaSYQBvbz/Oof7TJ1crrsBdeSK1bOuTTxV1t1q81bWrxwuJP+o+Ky2YFwyXF3FkhqsHt2oAaXXPKAzBH/nLRfMhfy4HWSKb8LLVxlrieS8ilNVg+yEE8rVjFwpbFPUw1LEgurMuN7A9hEcnBxWUwcdEMyWzpbx23AiFv4DC1W0NO4okJKx2GyEgIua/0fDyaPd4DFAMv02cH3y8nJuwd881PCtEZ8G9PIu1FWPF0=
 before_install:
-  - mv travis_secrets.yaml secrets.yaml
-  - docker pull homeassistant/home-assistant:latest
-
+- mv travis_secrets.yaml secrets.yaml
+- docker pull homeassistant/home-assistant:latest
 script:
-  -  ./travisconfigcheck.sh
+- "./travisconfigcheck.sh"
