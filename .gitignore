@@ -17,6 +17,7 @@ node-red
 deps
 tts
 *token*
+random_seed
 
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml
@@ -35,3 +36,4 @@ google_calendars.yaml
 home-assistant_v2.db
 pyozw.sqlite
 
+.gitsecret/keys/random_seed
