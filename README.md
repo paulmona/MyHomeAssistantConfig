@@ -2,7 +2,7 @@
 
 # *My Home Automation Setup*
 
-Last Update: 3/1/2019
+Last Update: 3/7/2019
 
 ***TL;DR***: Home Assistant, Node-Red, MQTT, Homeseer with mcsMQTT plugin based home automation configuration.
 
