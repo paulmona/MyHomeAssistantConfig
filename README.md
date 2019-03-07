@@ -1,4 +1,4 @@
-# MyHomeAssistantConfig
+# MyHomeAssistantConfig [![Build Status](https://travis-ci.org/paulmona/MyHomeAssistantConfig.svg?branch=master)](https://travis-ci.org/paulmona/MyHomeAssistantConfig)
 
 # *My Home Automation Setup*
 
