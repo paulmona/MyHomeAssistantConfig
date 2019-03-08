@@ -78,8 +78,11 @@ zone 1:
 # Discover some devices automatically
 discovery:
 
-# Allows you to issue voice commands from the frontend in enabled browsers
-# conversation:
+notify:
+  - name: "HASS Notifier"
+    platform: slack
+    api_key: !secret slack
+    default_channel: '#home-assistant'
 
 # Enables support for tracking state changes over time
 history:
