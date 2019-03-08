@@ -7,13 +7,13 @@
         - climate
         - group
         - cover
+        - input_boolean
         
       exclude_domains:
         - lock
         - house
         - remote
         - media_player
-        - input_boolean
         - scene
         - script
         - automation
@@ -31,4 +31,7 @@
         - light.garage_light_2
         - light.garage_door_light_1
         - switch.git_pull
+        - input_boolean.house_away
+        - input_boolean.kristina_occupancy
+        - input_boolean.paul_occupancy
         
