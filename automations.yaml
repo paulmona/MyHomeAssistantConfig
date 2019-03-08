@@ -13,6 +13,4 @@
         event_type: homeassistant_start
     action:
       service: notify.slack_notifier
-    data:
-      title: "Warning"
-      message: "Hass restarted"  
+    
