@@ -19,7 +19,7 @@ tts
 *token*
 random_seed
 lastpull
-
+*.log*
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml
 secrets.yaml
