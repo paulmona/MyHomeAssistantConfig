@@ -1,0 +1,19 @@
+  paul_occupancy:
+    name: "Paul Home"
+    initial: off
+    icon: mdi:car
+   
+  kristina_occupancy:
+    name: "Kristina Home"
+    initial: off
+    icon: mdi:car
+
+  house_away:
+     name: "House Home Away"
+     initial: off
+     icon: mdi:car
+
+  family_room_heater_override:
+     name: "Family Room Heater Override"
+     initial: off
+     icon: mdi:radiator

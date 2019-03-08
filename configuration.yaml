@@ -12,7 +12,7 @@ homeassistant:
   time_zone: America/Toronto
  
   # Customization file
-#customize: !include customize.yaml
+customize: !include customize.yaml
   
   # Enables the frontend
 frontend: 
@@ -23,6 +23,9 @@ recorder: !include recorder.yaml
 
 # Sensor Include File
 sensor: !include sensors.yaml
+
+# input boolean include
+input_boolean: !include boolean.yaml
 
 # Lights Include File
 light: !include lights.yaml
@@ -122,23 +125,6 @@ nest:
 
   client_id: !secret nest_id
   client_secret: !secret nest_secret
-
-  # Example configuration.yaml entry
-input_boolean:
-   paul_occupancy:
-     name: paul_home
-     initial: off
-     icon: mdi:car
-   
-   kristina_occupancy:
-     name: kristina_home
-     initial: off
-     icon: mdi:car
-
-   house_away:
-      name: house_occupancy
-      initial: off
-      icon: mdi:car
 
 device_tracker:
   - platform: mqtt
