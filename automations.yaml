@@ -13,4 +13,6 @@
         event_type: homeassistant_start
     action:
       service: notify.slack_notifier
+        data:
+          message: "Home Assistant Restarted"
     
