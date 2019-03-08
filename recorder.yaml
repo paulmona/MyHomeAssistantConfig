@@ -24,7 +24,7 @@
          - binary_sensor.ring_front_door_motion
          - sensor.front_hall_multisensor_relative_humidity
          - sensor.front_hall_multisensor_temperature
-         = sensor.family_room_multisensor_temperature
+         - sensor.family_room_multisensor_temperature
          - sensor.backdoor_deadbolt_power_management
          - sensor.filtered_realistic_front_hall_temperature
     
