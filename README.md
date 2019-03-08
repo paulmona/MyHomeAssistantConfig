@@ -14,7 +14,9 @@ I've long held that voice is the key to "seemless" home automation - what's the 
 
 # *Automated Testing using Github and TravisCI*
 
-I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integrates seamlessly with git.  Commits and Pushes are done from VS Code - TravisCI then does a test by running "hass -c myconfig check_config" against my configuration Yaml files - I have a travisci sensor in Home Assistant and when this sensor becomes "Passed" Home Assistant then executes a simple Shell Script (gitpull.sh) to do a pull request to my live system.
+I use Visual Studio Code as my IDE as it does a wonderul job with Yaml and integrates seamlessly with git.  Commits and Pushes are done from VS Code - TravisCI then does a test by running "hass -c myconfig check_config" against my configuration Yaml files - I have a travisci sensor in Home Assistant and when this sensor becomes "Passed" Home Assistant then executes a simple Shell Script (gitpull.sh) to do a pull request to my live system and resart docker.  Theh shell script that does the restart also notifies me about the restart in Slack.
+
+I run Watch Tower https://hub.docker.com/r/v2tec/watchtower to monitor each Docker container and pull the latest version automatically and notifiy me an update happened in slack.  This pulls the newest version of Home Assistant, MariaDB, Mosquitto MQTT, and node-red.
 
 # *My Current Home Automation Components*
 
