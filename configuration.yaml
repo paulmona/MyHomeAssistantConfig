@@ -79,7 +79,7 @@ zone 1:
 discovery:
 
 notify:
-  - name: "HASS Notifier"
+  - name: "slack_notifier"
     platform: slack
     api_key: !secret slack
     default_channel: '#home-assistant'

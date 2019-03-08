@@ -5,3 +5,14 @@
       to: 'passed'
     action:
     - service: script.git_pull
+
+  - id: "Startup Notification"
+    alias: 'Startup Notification'
+    trigger:
+      - platform: event
+        event_type: homeassistant_start
+    action:
+      service: notify.slack_notifier
+    data:
+      title: "Warning"
+      message: "Hass restarted"  
