@@ -17,3 +17,8 @@
      name: "Family Room Heater Override"
      initial: off
      icon: mdi:radiator
+
+  vacation_mode:
+     name: "vacation"
+     initial: off
+     icon: mdi:house
