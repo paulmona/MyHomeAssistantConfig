@@ -10,5 +10,6 @@ docker rm mosquitto
     --net qnet-static-eth0-e5ddec \
     --ip=192.168.0.7 \
     --hostname=mosquitto \
+    --restart=always \
     --name mosquitto eclipse-mosquitto:latest /usr/sbin/mosquitto -c /mosquitto/config/mosquitto.conf
 

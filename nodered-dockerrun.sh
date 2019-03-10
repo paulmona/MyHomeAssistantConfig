@@ -8,4 +8,5 @@ docker rm node-red
     --net qnet-static-eth0-e5ddec \
     --ip=192.168.0.5 \
     --hostname=node-red \
+    --restart=always \
     --name node-red nodered/node-red-docker:v8 npm start -- --userDir /data

@@ -8,4 +8,5 @@ docker rm mariadb
     --net qnet-static-eth0-e5ddec \
     --ip=192.168.0.8 \
     --hostname=mariadb \
+    --restart=always \
     --name mariadb mariadb:latest mysqld
