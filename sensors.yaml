@@ -20,15 +20,15 @@
     state_topic: homeseer/Front_Door/Door_Lock/Notification_Status
 
   - platform: mqtt
-    name: "Sasha Phone Smart Switch Watts"
-    unique_id: "SashaPhoneSmartSwitch"
+    name: "Garage Overhead Lights Watts"
+    unique_id: "GarageOverheadLightsWatts"
     icon: mdi:power-plug
     unit_of_measurement: "W"
-    state_topic: homeseer/Family_Room/Sasha_Phone_Smart_Switch/Watts   
+    state_topic: homeseer/Garage/Garage_Overhead_Lights/Watts   
 
   - platform: mqtt
-    name: "Sasha Phone Smart Switch KWh"
-    unique_id: "SashaPhoneSmartSwitchKWh"
+    name: "Garage Overhead Lights KWh"
+    unique_id: "GarageOverheadLightsKWh"
     icon: mdi:power-plug
     unit_of_measurement: "KWh"
     state_topic: homeseer/Family_Room/Sasha_Phone_Smart_Switch/KWh
