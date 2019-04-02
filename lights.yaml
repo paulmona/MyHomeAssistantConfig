@@ -121,8 +121,8 @@
 # Homeseer 137 Bedside Lamp
   - platform: mqtt
     name: "Tristan Bedside Lamp"
-    payload_on: "On"
-    payload_off: "Off"
+    payload_on: "255"
+    payload_off: "0"
     unique_id: "TristanBedsideLamp"
     state_topic: "homeseer/Tristan_Room/Light/Tristan_Bedside_Lamp"
     command_topic: "homeseer/Tristan_Room/Light/Tristan_Bedside_Lamp/Control"
