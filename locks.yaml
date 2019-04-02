@@ -1,10 +1,10 @@
-#  - platform: mqtt
-#    name: "Backdoor Lock"
-#    command_topic: "homeseer/Back_Door/Door_Lock/Control"
-#    state_topic: "homeseer/Back_Door/Door_Lock"
-#    payload_lock: "255"
-#    payload_unlock: "0"
-#    optimistic: false
+  - platform: mqtt
+    name: "Backdoor Lock"
+    command_topic: "homeseer/Back_Door/Door_Lock/Control"
+    state_topic: "homeseer/Back_Door/Door_Lock"
+    payload_lock: "255"
+    payload_unlock: "0"
+    optimistic: false
 
   - platform: mqtt
     name: "Front Door Lock"
