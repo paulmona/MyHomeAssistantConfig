@@ -19,6 +19,12 @@
     unique_id: "FrontDoorLockStatus"
     state_topic: homeseer/Front_Door/Door_Lock/Notification_Status
 
+# Homeseer Device ID 472 
+  - platform: mqtt
+    name: "Back Door Lock Status"  
+    unique_id: "BackDoorLockStatus"
+    state_topic: homeseer/Back_Door/Door_Lock/Notification_Status
+
   - platform: mqtt
     name: "Garage Overhead Lights Watts"
     unique_id: "GarageOverheadLightsWatts"
