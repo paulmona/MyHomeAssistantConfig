@@ -124,8 +124,8 @@
     payload_on: "On"
     payload_off: "Off"
     unique_id: "TristanBedsideLamp"
-    state_topic: "homeseer/Tristan_Room/Light/Bedside_Lamp"
-    command_topic: "homeseer/Tristan_Room/Light/Bedside_Lamp/Control"
+    state_topic: "homeseer/Tristan_Room/Light/Tristan_Bedside_Lamp"
+    command_topic: "homeseer/Tristan_Room/Light/Tristan_Bedside_Lamp/Control"
     optimistic: false
 
 # Homeseer 13 Dining Room overhead
