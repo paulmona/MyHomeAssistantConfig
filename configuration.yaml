@@ -14,8 +14,8 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
 
-service: logger.set_level
-     data:
+  service: logger.set_level
+    data:
        homeassistant.components: warning
        homeassistant.components.light.living_room_lights: debug
 
