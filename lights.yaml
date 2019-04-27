@@ -183,8 +183,8 @@
 # Homeseer 318 Garage Workbench Light
   - platform: mqtt
     name: "Garage Workbench Light"
-    payload_on: "On"
-    payload_off: "Off"
+    payload_on: "255"
+    payload_off: "0"
     unique_id: "GarageWorkBenchLight"
     state_topic: homeseer/Garage/Switch/Workbench_Light
     command_topic: homeseer/Garage/Switch/Workbench_Light/Control
