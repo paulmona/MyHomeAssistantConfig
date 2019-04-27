@@ -152,7 +152,7 @@ cover:
 
 # Text to speech
 tts:
-  - platform: google
+  - platform: google_translate
 
 #google:
 #   client_id: !secret google_client_id
