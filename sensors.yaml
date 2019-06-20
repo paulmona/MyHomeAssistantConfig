@@ -400,3 +400,27 @@
     name:  Home Assistant Latest Docker
     command:  curl -s -L https://registry.hub.docker.com/v2/repositories/homeassistant/home-assistant/tags/ | grep -Eo '"name":\s"[0-9.]*"' | head -1 | sed -e "s/\"name\":\s\"/${replace}/g" | sed -e "s/\"/${replace}/g"
     scan_interval: 28800      
+
+    # Homeseer node ID 483
+  - platform: mqtt
+    name: "Pool Pump KWh"
+    unique_id: "PoolPumpKwh"
+    icon: mdi:power-plug
+    unit_of_measurement: "KWh"
+    state_topic: homeseer/Pool/Pump/KWh    
+
+# Homeseer node ID 484
+  - platform: mqtt
+    name: "Pool Pump Watts"
+    unique_id: "PoolPumpWatts"
+    icon: mdi:power-plug
+    unit_of_measurement: "Watts"
+    state_topic: homeseer/Pool/Pump/Watts    
+
+# Homeseer node ID 486
+  - platform: mqtt
+    name: "Pool Pump Amps"
+    unique_id: "Pool Pump Amps"
+    icon: mdi:power-plug
+    unit_of_measurement: "Amps"
+    state_topic: homeseer/Pool/Pump/Amps    

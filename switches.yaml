@@ -49,3 +49,15 @@
     state_off: "0"
     icon: mdi:radiator
     optimistic: false
+
+# Homeseer Node ID 488
+  - platform: mqtt
+    name: "Pool Pump"
+    state_topic: "homeseer/Pool/Pump/Switch"
+    command_topic: "homeseer/Pool/Pump/Switch/Control"
+    payload_on: "255"
+    payload_off: "0"
+    state_on: "255"
+    state_off: "0"
+    icon: mdi:pool
+    optimistic: false
