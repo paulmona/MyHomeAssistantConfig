@@ -38,3 +38,4 @@ home-assistant_v2.db
 pyozw.sqlite
 watchtower-dockerrun.sh
 .gitsecret/keys/random_seed
+.vscode/settings.json
