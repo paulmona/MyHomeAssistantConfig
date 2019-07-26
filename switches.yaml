@@ -61,3 +61,15 @@
     state_off: "0"
     icon: mdi:pool
     optimistic: false
+
+# Homeseer Node ID 501
+  - platform: mqtt
+    name: "Pool Lights"
+    state_topic: "homeseer/Pool/Lights/Switch"
+    command_topic: "homeseer/Pool/Lights/Switch/Control"
+    payload_on: "255"
+    payload_off: "0"
+    state_on: "255"
+    state_off: "0"
+    icon: mdi:pool
+    optimistic: false
