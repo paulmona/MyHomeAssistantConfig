@@ -30,4 +30,5 @@
          - sensor.pool_pump_amps
          - sensor.pool_pump_watts
          - sensor.pool_pump_kwh
+         - ssensor.garage_storage_room_temperature
     
