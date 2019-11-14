@@ -423,4 +423,14 @@
     unique_id: "Pool Pump Amps"
     icon: mdi:power-plug
     unit_of_measurement: "Amps"
-    state_topic: homeseer/Pool/Pump/Amps    
+    state_topic: homeseer/Pool/Pump/Amp
+
+# Homeseer node ID 503
+  - platform: mqtt
+    name: "Garage Storage Room Temperature"
+    unique_id: "Garage Storge Temp"
+    icon: mdi:thermometerlines
+    unit_of_measurement: "Celcius"
+    state_topic: homeseer/Garage/Storage/Temp  
+    
+    
