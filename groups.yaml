@@ -8,3 +8,14 @@
       - sensor.family_room_radiator_smart_switch_watts
       - sensor.family_room_radiator_smart_switch_amps
       - sensor.family_room_radiator_smart_switch_volts
+
+  away:
+    name: home
+    icon: mdi:home
+    entities:
+      - device_tracker.kristinasiphone
+      - device_tracker.orsons_iphone
+      - device_tracker.paul_pixel4xl
+      - device_tracker.sashaiphone
+      - device_tracker.tristaniphone
+    
