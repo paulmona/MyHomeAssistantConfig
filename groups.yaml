@@ -18,4 +18,11 @@
       - device_tracker.paul_pixel4xl
       - device_tracker.sashaiphone
       - device_tracker.tristaniphone
+
+  paulkristinahomeaway:
+    name: paulkristinahomeaway
+    icon: mdi:home
+    entities:
+      - device_tracker.kristinasiphone
+      - device_tracker.paul_pixel4xl    
     
