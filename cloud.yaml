@@ -24,7 +24,6 @@
         - group.all_remotes
         - group.all_scripts
         - group.calendar
-        - switch.grow_light
         - light.front_hall_1
         - light.front_hall_2
         - light.front_yard_1
