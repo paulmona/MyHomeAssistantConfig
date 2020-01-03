@@ -78,7 +78,7 @@ zone 1:
 # Discover some devices automatically
 discovery:
 
-notify:
+#notify:
 #  - name: "slack_notifier"
 #    platform: slack
 #    api_key: !secret slack
