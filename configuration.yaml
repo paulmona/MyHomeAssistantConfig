@@ -79,10 +79,10 @@ zone 1:
 discovery:
 
 notify:
-  - name: "slack_notifier"
-    platform: slack
-    api_key: !secret slack
-    default_channel: '#home-assistant'
+#  - name: "slack_notifier"
+#    platform: slack
+#    api_key: !secret slack
+#    default_channel: '#home-assistant'
 
 # Enables support for tracking state changes over time
 history:
