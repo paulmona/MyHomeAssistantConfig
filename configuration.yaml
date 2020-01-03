@@ -152,9 +152,9 @@ tts:
 #   client_id: !secret google_client_id
 #   client_secret: !secret google_secret
    
-ring:
-  username: !secret ring_username
-  password: !secret ring_password 
+#ring:
+#  username: !secret ring_username
+#  password: !secret ring_password 
 
 # Example configuration.yaml entry
 #media_player:
