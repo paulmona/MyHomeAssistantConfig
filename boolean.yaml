@@ -1,14 +1,4 @@
-  paul_occupancy:
-    name: "Paul Home"
-    initial: off
-    icon: mdi:car
-   
-  kristina_occupancy:
-    name: "Kristina Home"
-    initial: off
-    icon: mdi:car
-
-  house_away:
+   house_away:
      name: "House Home Away"
      initial: off
      icon: mdi:car
@@ -22,3 +12,9 @@
      name: "vacation"
      initial: off
      icon: mdi:house
+  
+  sonarr_tv:
+     name: "What is on TV"
+     initial: off
+     icon: mdi:tv
+  
