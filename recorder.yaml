@@ -1,6 +1,6 @@
    db_url: !secret recorder_db
 
-   purge_keep_days: 7
+   purge_keep_days: 30
    include:
       entities:
          - sensor.front_hall_multisensor_battery_level
@@ -32,5 +32,14 @@
          - sensor.pool_pump_kwh
          - sensor.garage_storage_room_temperature
          - device_tracker.paul_pixel4xl
+         - device_tracker.kristinasiphone
+         - device_tracker.orsons_iphone
+         - device_tracker.sashaiphone
+         - device_tracker.tristaniphone
+         - sensor.basement_nest_protect_battery_health
+         - sensor.home_eta
+         - sensor.master_bedroom_nest_protect_battery_health
+         - sensor.kitchen_nest_protect_battery_health
+         
 
     
