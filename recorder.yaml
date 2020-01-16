@@ -36,10 +36,6 @@
          - device_tracker.orsons_iphone
          - device_tracker.sashaiphone
          - device_tracker.tristaniphone
-         - sensor.basement_nest_protect_battery_health
-         - sensor.home_eta
-         - sensor.master_bedroom_nest_protect_battery_health
-         - sensor.kitchen_nest_protect_battery_health
          
 
     
