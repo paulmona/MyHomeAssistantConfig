@@ -1,0 +1,12 @@
+  name: Home Assistant Docker Latest Image Build
+  scan_interval: 300
+  resource: https://registry.hub.docker.com/v1/repositories/homeassistant/home-assistant/tags
+  headers:
+    Content-Type: application/json
+    User-Agent: Home Assistant REST sensor
+  value_template: >-
+        {% for image_build in value_json | reverse if image_build.name.split(".")[0]=="0"  %}
+          {% if loop.first %}
+               {{image_build.name}}
+          {% endif %}
+        {% endfor %}

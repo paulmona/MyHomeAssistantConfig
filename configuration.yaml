@@ -51,6 +51,9 @@ automation: !include automations.yaml
 # Scripts - Also not used (yet)
 script: !include scripts.yaml
 
+# Rest Component
+rest: !include rest.yaml
+
 #system_health:
 
 # Show links to resources in log and frontend
