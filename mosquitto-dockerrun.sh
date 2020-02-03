@@ -7,8 +7,8 @@ docker rm mosquitto
     -v /share/Public/Containers/mosquitto/logs:/mosquitto/logs \
     -v /share/Public/Containers/mosquitto/config:/mosquitto/config \
     -v /etc/localtime:/etc/localtime:ro \
-    --net qnet-static-eth0-e5ddec \
-    --ip=192.168.0.7 \
+    --net qnet-static-eth1-08c327 \
+    --ip=192.168.3.7 \
     --hostname=mosquitto \
     --restart=always \
     --name mosquitto eclipse-mosquitto:latest /usr/sbin/mosquitto -c /mosquitto/config/mosquitto.conf
