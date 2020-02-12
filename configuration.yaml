@@ -17,7 +17,10 @@ homeassistant:
   # Enables the frontend
 frontend: 
      themes: !include amoled.yaml
- 
+
+# For Android mobile app
+mobile_app:
+
   # Saves data to MariaDB
 recorder: !include recorder.yaml
 
