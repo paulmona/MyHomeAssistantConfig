@@ -65,12 +65,12 @@ rest: !include rest.yaml
 # Enables configuration UI
 config:
   
-zone 1:
-  name: Home
-  latitude: !secret mylatitude
-  longitude: !secret mylongtitude 
-  icon: mdi:home
-  radius: 500
+#zone 1:
+#  name: Home
+#  latitude: !secret mylatitude
+#  longitude: !secret mylongtitude 
+#  icon: mdi:home
+#  radius: 500
 
 # Checks for available updates
 # Note: This component will send some information about your system to
