@@ -54,8 +54,8 @@ automation: !include automations.yaml
 # Scripts - Also not used (yet)
 script: !include scripts.yaml
 
-# Rest Component
-rest: !include rest.yaml
+# Commented out to troubleshoot  Rest Component
+#rest: !include rest.yaml
 
 #system_health:
 
