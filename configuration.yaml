@@ -43,7 +43,7 @@ binary_sensor: !include binary_sensor.yaml
 cloud: !include cloud.yaml
 
 # Groups of Devices
-#group: !include groups.yaml
+group: !include groups.yaml
 
 # HA Automations - Not used I use node-red
 automation: !include automations.yaml
