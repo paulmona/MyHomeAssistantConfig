@@ -2,8 +2,9 @@
 
 # *My Home Automation Setup*
 
-Last Update:7/26/2019
-Home Assistant Version: 0.96.4
+Version below is not always accurate, this is updated manually.  
+Last Update:2/24/2020
+Home Assistant Version: 0.105.5
 
 ***TL;DR***: Home Assistant, Node-Red, MQTT, Homeseer (Z-Wave) with mcsMQTT plugin based home automation configuration.
 
