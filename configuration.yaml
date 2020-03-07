@@ -57,9 +57,6 @@ script: !include scripts.yaml
 # Example configuration.yaml entry
 mobile_app:
 
-# Automatically Generate Readme
-readme:
-
 #system_health:
 
 # Show links to resources in log and frontend
