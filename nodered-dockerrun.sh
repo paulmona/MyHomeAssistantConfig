@@ -1,5 +1,5 @@
 #!/bin/bash
-docker pull nodered/node-red-docker:v8
+docker pull nodered/node-red
 docker stop node-red
 docker rm node-red
 /share/CACHEDEV1_DATA/.qpkg/container-station/bin/docker run -d -t \
@@ -10,4 +10,4 @@ docker rm node-red
     --hostname=node-red \
     --restart=always \
      -e TZ=America/Toronto \
-    --name node-red nodered/node-red-docker:v8 npm start -- --userDir /data
+    --name node-red nodered/node-red npm start -- --userDir /data
