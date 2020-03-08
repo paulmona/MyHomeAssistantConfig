@@ -1,0 +1,18 @@
+  home:
+    devices:
+      - device_tracker.pixel_4_xl
+      - device_tracker.kristinas_iphone
+    tolerance: 50
+    unit_of_measurement: km
+  kristinawork:
+    zone: kristinawork
+    devices:
+      - device_tracker.kristinas_iphone
+    tolerance: 50
+    unit_of_measurement: km
+  paulwork:
+    zone: paulwork
+    devices:
+      - device_tracker.pixel_4_xl
+      tolerance: 50
+      unit_of_measurement: km

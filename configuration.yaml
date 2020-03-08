@@ -54,6 +54,9 @@ script: !include scripts.yaml
 # Commented out to troubleshoot  Rest Component
 #rest: !include rest.yaml
 
+# HA Proximity
+proximity: !include proximity.yaml
+
 # Example configuration.yaml entry
 mobile_app:
 
