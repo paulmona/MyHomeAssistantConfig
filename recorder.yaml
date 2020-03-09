@@ -1,41 +1,41 @@
    db_url: !secret recorder_db
 
    purge_keep_days: 30
-   include:
-      entities:
-         - sensor.front_hall_multisensor_battery_level
-         - sensor.frontdoor_battery_level
-         - sensor.sasha_bedroom_light_switch_battery_level
-         - sensor.mainfloor_thermostat_temperature
-         - sensor.master_bedroom_thermostat_temperature
-         - sensor.mean_house_temperature
-         - sensor.mainfloor_thermostat_humidity
-         - sensor.master_bedroom_thermostat_humidity
-         - binary_sensor.ps4_power_status
-         - sensor.PS4_smart_switch_watts
-         - sensor.sasha_phone_smart_switch_watts
-         - sensor.load_1m
-         - sensor.load_5m
-         - sensor.load_15m
-         - sensor.memory_use_percent
-         - sensor.network_out_eth0
-         - sensor.network_in_eth0
-         - binary_sensor.ring_backyard_motion
-         - binary_sensor.ring_front_door_motion
-         - sensor.front_hall_multisensor_relative_humidity
-         - sensor.front_hall_multisensor_temperature
-         - sensor.family_room_multisensor_temperature
-         - sensor.backdoor_deadbolt_power_management
-         - sensor.filtered_realistic_front_hall_temperature
-         - sensor.pool_pump_amps
-         - sensor.pool_pump_watts
-         - sensor.pool_pump_kwh
-         - sensor.garage_storage_room_temperature
-         - device_tracker.paul_pixel4xl
-         - device_tracker.kristinasiphone
-         - device_tracker.orsons_iphone
-         - device_tracker.sashaiphone
-         - device_tracker.tristaniphone
+   #include:
+   #   entities:
+   #      - sensor.front_hall_multisensor_battery_level
+   #      - sensor.frontdoor_battery_level
+   #      - sensor.sasha_bedroom_light_switch_battery_level
+   #      - sensor.mainfloor_thermostat_temperature
+   #      - sensor.master_bedroom_thermostat_temperature
+   #      - sensor.mean_house_temperature
+   #      - sensor.mainfloor_thermostat_humidity
+   #      - sensor.master_bedroom_thermostat_humidity
+   #      - binary_sensor.ps4_power_status
+   #      - sensor.PS4_smart_switch_watts
+   #      - sensor.sasha_phone_smart_switch_watts
+   #      - sensor.load_1m
+   #      - sensor.load_5m
+   #      - sensor.load_15m
+   #      - sensor.memory_use_percent
+   #      - sensor.network_out_eth0
+   #      - sensor.network_in_eth0
+   #      - binary_sensor.ring_backyard_motion
+   #      - binary_sensor.ring_front_door_motion
+   #      - sensor.front_hall_multisensor_relative_humidity
+   #      - sensor.front_hall_multisensor_temperature
+   #      - sensor.family_room_multisensor_temperature
+   #      - sensor.backdoor_deadbolt_power_management
+   #      - sensor.filtered_realistic_front_hall_temperature
+   #      - sensor.pool_pump_amps
+   #      - sensor.pool_pump_watts
+   #      - sensor.pool_pump_kwh
+   #      - sensor.garage_storage_room_temperature
+   #      - device_tracker.paul_pixel4xl
+   #      - device_tracker.kristinasiphone
+   #      - device_tracker.orsons_iphone
+   #      - device_tracker.sashaiphone
+   #      - device_tracker.tristaniphone
          
 
     
