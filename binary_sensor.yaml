@@ -23,7 +23,11 @@
     payload_off: 0
 
 # Sensor to Track if TV in FamilyRoom is on.
-  - platform: ping
-    name: FamilyRoomTV
-    host: !secret tv_ipaddy 
-    scan_interval: 120 
+#  - platform: ping
+#    name: FamilyRoomTV
+#    host: !secret tv_ipaddy 
+#    scan_interval: 120 
+
+  - platform: workday
+    country: CA
+    province: "ON"
