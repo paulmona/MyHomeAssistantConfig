@@ -40,7 +40,7 @@
         command_off: "pwd"  
   
   - platform: mqtt
-    name: "Family Room Heater"
+    name: "Family Room Lamp"
     state_topic: "homeseer/Family_Room/Radiator"
     command_topic: "homeseer/Family_Room/Radiator/Control"
     payload_on: "255"
