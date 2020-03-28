@@ -86,5 +86,5 @@ Moved to Docker on 05/03/2019 by creating a branch of my configuration and autom
       1 * Unifi Security Gateway
   
   * Internet Connection
-    * Bell Fibe Gigabit Fiber (1Gb Up, 100Mb down)
+    * Bell Fibe Gigabit Fiber (1Gb down, 100Mb up)
     * Rogers Cable (30Mb backup)
