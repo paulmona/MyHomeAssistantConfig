@@ -3,7 +3,7 @@
 # *My Home Automation Setup*
 
 Version below is not always accurate, this is updated manually.  
-Last Update:4/7/2020
+Last Update:4/28/2020
 
 ***TL;DR***: Home Assistant, Node-Red, MQTT, Homeseer (Z-Wave) with mcsMQTT plugin based home automation configuration.
 
