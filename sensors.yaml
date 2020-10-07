@@ -290,10 +290,3 @@
     unit_of_measurement: "Celcius"
     state_topic: homeseer/Garage/Storage/Temp  
   
-  - platform: sonarr
-    api_key: !secret sonarr_key
-    host: 192.168.0.163
-    monitored_conditions:
-      - upcoming
-    days: 2
-    
