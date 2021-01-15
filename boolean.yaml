@@ -13,13 +13,9 @@
      initial: off
      icon: mdi:house
   
-   screen_up:
-     name: "Projector Screen Up"
+   screen:
+     name: "Projector Screen"
      initial: off
      icon: mdi:projector_screen
-  
-   screen_down:
-     name: "Projector Screen Down"
-     initial: off
-     icon: mdi:projector_screen
+
   
