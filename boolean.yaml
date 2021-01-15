@@ -13,8 +13,13 @@
      initial: off
      icon: mdi:house
   
-   sonarr_tv:
-     name: "What is on TV"
+   screen_up:
+     name: "Projector Screen Up"
      initial: off
-     icon: mdi:tv
+     icon: mdi:projector_screen
+  
+   screen_down:
+     name: "Projector Screen Down"
+     initial: off
+     icon: mdi:projector_screen
   
