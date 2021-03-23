@@ -289,4 +289,12 @@
     icon: mdi:thermometerlines
     unit_of_measurement: "Celcius"
     state_topic: homeseer/Garage/Storage/Temp  
-  
+ 
+  - platform: imap_email_content
+    server: imap.gmail.com
+    port: 993
+    username: !secret imap_username
+    password: !secret imap_password 
+    folder: garage
+    senders:
+      - noreply@tiwiconnect.com 

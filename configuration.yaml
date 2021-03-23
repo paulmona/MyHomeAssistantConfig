@@ -60,13 +60,6 @@ proximity: !include proximity.yaml
 # Example configuration.yaml entry
 mobile_app:
 
-media_player:
-  - platform: denonavr
-    host: 192.168.0.101
-    name: DenonReceiver
-    show_all_sources: true
-    timeout: 5
-    
 #system_health:
 
 # Show links to resources in log and frontend

@@ -1,17 +1,130 @@
-  - alias: 'Misc: Update config if travis build is successfull'
-    trigger:
-      platform: state
-      entity_id: sensor.paulmona_myhomeassistantconfig_last_build_state
-      to: 'passed'
-    action:
-    - service: script.git_pull
-
-  - id: "Startup Notification"
-    alias: 'Startup Notification'
-    trigger:
-      - platform: event
-        event_type: homeassistant_start
-    action:
-      service: notify.slack_notifier
- 
-    
+- alias: 'Misc: Update config if travis build is successfull'
+  trigger:
+    platform: state
+    entity_id: sensor.paulmona_myhomeassistantconfig_last_build_state
+    to: passed
+  action:
+  - service: script.git_pull
+  id: 4596e5ef9d744f42836762e84c34f2a4
+- id: Startup Notification
+  alias: Startup Notification
+  trigger:
+  - platform: event
+    event_type: homeassistant_start
+  action:
+    service: notify.slack_notifier
+- id: '1583769618757'
+  alias: Kristina Left Work
+  description: ''
+  trigger:
+  - entity_id: device_tracker.kristinas_iphone
+    event: leave
+    platform: zone
+    zone: zone.kristina_work
+  condition: []
+  action:
+  - data:
+      away_mode: home
+    service: nest.set_away_mode
+  - data:
+      message: Kristina left work
+      title:
+    service: notify.mobile_app_pixel_4_xl
+- id: '1583771528831'
+  alias: Paul Left Work
+  description: ''
+  trigger:
+  - entity_id: device_tracker.pixel_4_xl
+    event: leave
+    platform: zone
+    zone: zone.nortonlifelock
+  condition: []
+  action:
+  - data:
+      away_mode: home
+    service: nest.set_away_mode
+- id: '1583966499410'
+  alias: Kristina Home
+  description: ''
+  trigger:
+  - entity_id: device_tracker.kristinas_iphone
+    event: enter
+    platform: zone
+    zone: zone.home
+  condition: []
+  action:
+  - data:
+      message: Kristina is home
+      title: Kristina
+    service: notify.mobile_app_pixel_4_xl
+- id: '1583966725653'
+  alias: Paul is home
+  description: ''
+  trigger:
+  - entity_id: device_tracker.pixel_4_xl
+    event: enter
+    platform: zone
+    zone: zone.home
+  condition: []
+  action:
+  - data:
+      entity_id: all
+      message: Paul is home
+    service: tts.google_translate_say
+- id: '1584307895121'
+  alias: Test Say
+  description: ''
+  trigger:
+  - entity_id: light.living_room_lights
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      entity_id: all
+      message: Baby, get up please.
+    service: tts.google_translate_say
+- id: '1610735315216'
+  alias: Projector Screen Down
+  description: ''
+  trigger:
+  - platform: state
+    from: 'off'
+    to: 'on'
+    entity_id: input_boolean.screen
+  condition: []
+  action:
+  - device_id: 40ada3d258614c58e7684ca2281b6863
+    domain: cover
+    entity_id: cover.556307468caab5e9de7d
+    type: close
+  - service: remote.send_command
+    data:
+      entity_id: remote.harmony_hub
+      command:
+      - DirectionDown
+      device: 72850985
+  mode: single
+- id: '1610736513728'
+  alias: Projector Screen Up
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: input_boolean.screen
+    from: 'on'
+    to: 'off'
+  condition: []
+  action:
+  - service: remote.send_command
+    data:
+      entity_id: remote.harmony_hub
+      command:
+      - DirectionUp
+      device: 72850985
+    entity_id: remote.harmony_hub
+  - device_id: 40ada3d258614c58e7684ca2281b6863
+    domain: cover
+    entity_id: cover.556307468caab5e9de7d
+    type: open
+  mode: single

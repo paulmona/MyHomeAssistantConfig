@@ -8,4 +8,5 @@ docker rm homeassistant
     --net qnet-static-eth0-e5ddec \
     --ip=192.168.0.6 \
     --hostname=homeassistant \
+    --restart=always \
     --name homeassistant homeassistant/home-assistant:latest python -m homeassistant --config /config --log-rotate-days '3'
