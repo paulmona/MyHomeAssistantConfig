@@ -87,4 +87,4 @@ Moved to Docker on 05/03/2019 by creating a branch of my configuration and autom
   
   * Internet Connection
     * Bell Fibe Gigabit Fiber (1Gb down, 100Mb up)
-    * Rogers Cable (30Mb backup)
+ 
