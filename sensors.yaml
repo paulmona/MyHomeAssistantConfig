@@ -289,7 +289,8 @@
     icon: mdi:thermometerlines
     unit_of_measurement: "Celcius"
     state_topic: homeseer/Garage/Storage/Temp  
- 
+
+# Homeseeri node ID 510
   - platform: mqtt
     name: "Garage Door Status"
     unique_id: "Garage Door Status"
