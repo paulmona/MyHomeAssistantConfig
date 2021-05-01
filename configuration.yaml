@@ -157,6 +157,11 @@ cover:
 tts:
   - platform: google_translate
 
+
+media_player:
+  - platform: anthemav
+    host: 192.168.0.101
+
 #google:
 #   client_id: !secret google_client_id
 #   client_secret: !secret google_secret
