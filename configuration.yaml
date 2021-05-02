@@ -107,7 +107,7 @@ sun:
 
 # SSL configuration
 http:
-  #base_url: !secret my_url
+  # base_url: !secret my_url
   ssl_certificate: !secret ssl_certificate
   ssl_key: !secret ssl_private_key
 
