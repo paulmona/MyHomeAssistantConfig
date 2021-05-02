@@ -214,13 +214,6 @@
     command_topic: homeseer/Master_Bedroom/Dimmer/Master_Bedroom_Light/Control
     optimistic: false
 
-# Group for Garage Lights
-  - platform: group
-    name: "Garage Lights"
-    entities:
-      - light.garage_workbench_light
-      - switch.garage_overhead_lights
-
 # Group for Mainfloor Lights
   - platform: group
     name: "Main Floor Lights"
