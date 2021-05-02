@@ -296,6 +296,8 @@
     unique_id: "Garage Door Status"
     icon: mid:garage
     state_topic: homeseer/Garage/Status/Garage_Door_Status
+    payload_on: 255
+    payload_off: 0
 
 
  # Homeseeri node ID 523
@@ -304,3 +306,6 @@
     unique_id: "Garage Motion Sensor"
     icon: mid:garage
     state_topic: homeseer/Garage/Motion
+    payload_on: 255
+    payload_off: 0
+
