@@ -298,7 +298,7 @@
     state_topic: homeseer/Garage/Status/Garage_Door_Status
 
 
- Homeseeri node ID 523
+ # Homeseeri node ID 523
   - platform: mqtt
     name: "Garage Motion"
     unique_id: "Garage Motion Sensor"
