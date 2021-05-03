@@ -280,7 +280,7 @@
     unit_of_measurement: "Celcius"
     state_topic: homeseer/Garage/Storage/Temp  
 
-# Homeseeri node ID 510
+# Homeseeri node ID 523
   - platform: mqtt
     name: "Garage Door Status"
     unique_id: "Garage Door Status"
