@@ -158,9 +158,9 @@ tts:
   - platform: google_translate
 
 
-media_player:
-  - platform: anthemav
-    host: 192.168.0.101
+#media_player:
+# - platform: anthemav
+#   host: 192.168.0.101
 
 hydrawise:
   access_token: !secret hydrawise_api
