@@ -73,3 +73,6 @@
     state_off: "0"
     icon: mdi:pool
     optimistic: false
+
+switch:
+  - platform: hydrawise
