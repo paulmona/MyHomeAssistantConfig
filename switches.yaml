@@ -74,5 +74,5 @@
     icon: mdi:pool
     optimistic: false
 
-switch:
   - platform: hydrawise
+
