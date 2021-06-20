@@ -293,5 +293,6 @@
     unique_id: "Garage Motion Sensor"
     icon: mid:garage
     state_topic: homeseer/Garage/Motion
-    
 
+sensor:
+  - platform: hydrawise
