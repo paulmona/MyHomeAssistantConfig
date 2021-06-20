@@ -32,5 +32,4 @@
     country: CA
     province: "ON"
 
-binary_sensor:
   - platform: hydrawise
